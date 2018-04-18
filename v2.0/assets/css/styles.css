@@ -1,0 +1,102 @@
+body{
+  background-image: url("../lib/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Roboto;
+}
+
+h1{
+  color: white;
+}
+
+.main{
+  width: 100vw;
+  position: relative;
+}
+
+.content{
+  background-color: #dfe6e9;
+}
+
+.landing{
+  text-align: center;
+  height: 87vh;
+}
+
+.roof{
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 350px;
+  grid-template-areas: "left roofMid right";
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dfe6e9+0,e4e4e4+100&0+0,1+64 */
+  background: -moz-linear-gradient(top, rgba(223,230,233,0) 0%, rgba(226,229,230,1) 64%, rgba(228,228,228,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(223,230,233,0) 0%,rgba(226,229,230,1) 64%,rgba(228,228,228,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(223,230,233,0) 0%,rgba(226,229,230,1) 64%,rgba(228,228,228,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00dfe6e9', endColorstr='#e4e4e4',GradientType=0 ); /* IE6-9 */
+}
+
+.bodyCenter{
+  display: grid;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: 350px;
+  grid-template-areas: "left bodyMid right";
+}
+
+.roofMid{
+  grid-area: roofMid;
+  background-image: url("../lib/roof.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bodyMid{
+  grid-area: bodyMid;
+  background-image: url("../lib/body.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.left{
+  grid-area: left;
+}
+
+
+
+.right{
+  grid-area: right;
+}
+
+.hidden{
+  opacity: 0;
+}
+
+.about{
+  background-color: #ff7675;
+  margin: auto 19.4%;
+  height: 176px;
+  text-align: justify;
+}
+
+.contact{
+  background-color: #ffeaa7;
+  margin-right: 19.5%;
+  margin-left: 45.5%;
+  height: 176px;
+  text-align: right;
+  padding-right: 5px;
+}
+
+h3{
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+}
+
+p{
+  font-size: 1em;
+}
