@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     var pictureCount = $('.images img').length;
-    var scrollResolution = 50;
+    var scrollResolution = 55;
 
     animateBuilding();
 
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 
 //Revealing text content with scroll
-window.sr = ScrollReveal({duration:"400", delay: "250"});
+window.sr = ScrollReveal({duration:"400", delay: "500"});
 sr.reveal(".textContent");
 
 //Fading out down arrow
