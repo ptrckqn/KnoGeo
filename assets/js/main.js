@@ -27,6 +27,7 @@ $(document).ready(function () {
 //Revealing text content with scroll
 window.sr = ScrollReveal({duration:"250", delay: "350"});
 sr.reveal(".textContent");
+sr.reveal(".function")
 
 //Fading out down arrow
 $(window).scroll(function(){
