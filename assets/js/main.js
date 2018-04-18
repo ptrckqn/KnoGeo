@@ -25,5 +25,11 @@ $(document).ready(function () {
 
 
 //Revealing text content with scroll
-window.sr = ScrollReveal({duration:"700", delay: "250"});
+window.sr = ScrollReveal({duration:"400", delay: "250"});
 sr.reveal(".textContent");
+
+//Fading out down arrow
+$(window).scroll(function(){
+    $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);
+  //250 is fade pixels
+  });
