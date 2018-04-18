@@ -62,6 +62,13 @@ hr{
   margin-right: 5%;
 }
 
+#lastImage{
+  position: none;
+}
+
+.technical{
+}
+
 
 /* Bouncing arrow animation */
 @-moz-keyframes bounce {
