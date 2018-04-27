@@ -2,7 +2,6 @@
 @media (max-width: 1024px){
   .content{
     text-align: center;
-    width: 100vw;
     background: url(../lib/imgs/es0.png) no-repeat center center fixed;
     background-size: cover;
   }
@@ -13,10 +12,6 @@
 
   .images{
     opacity: 0;
-  }
-
-  .technical{
-    margin-top: -150%;
   }
 
   .timeline ul li div {
@@ -41,7 +36,7 @@
   }
 
   .landing{
-    padding-top: 35%;
+    padding-top: 5%;
   }
 
 }
@@ -49,12 +44,19 @@
 /* Desktop Styles */
 
 @media (min-width: 1025px){
+
   .content{
     margin-right: 50%;
   }
 
+  .logo{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+
   .textContent{
-    margin: 150% auto;
+    margin: 75% auto;
   }
 
   .images{
@@ -76,22 +78,27 @@
 
 
   .technical{
-    margin-top: -15%;
     width: 100vw;
     margin-bottom: 15%;
   }
 
   .landing{
-    margin-top: 45%;
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .teamContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 1fr;
+
   }
 }
 
 
 body{
   font-family: Roboto;
-  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -118,10 +125,14 @@ h5{
   font-weight: 400;
 }
 
+h1, h2, h3, h5{
+  color: #33333;
+}
+
 hr{
   width: 50%;
   border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #285AA0;
 }
 
 .jumbotron{
@@ -131,6 +142,10 @@ hr{
   box-shadow:
   0 4px 8px 0 rgba(0,0,0,0.12),
   0 2px 4px 0 rgba(0,0,0,0.08);
+}
+
+.jumbotron p{
+  text-align: center;
 }
 
 .animated{
@@ -217,10 +232,86 @@ hr{
   }
 }
 
+.benefits{
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "benefitOne vertLine benefitTwo vertLine benefitThree";
+}
 
+.vertLine{
+  grid-area: "vertLine";
+  background-color: black;
+}
+
+.benefitContent{
+  text-align: center;
+  margin: 0 4px;
+}
+
+.benefitOne{
+  grid-area: "benefitOne";
+
+}
+
+.benefitTwo{
+  grid-area: "benefitTwo";
+}
+
+.benefitThree{
+  grid-area: "benefitThree";
+}
+
+.fa-clock, .fa-map-pin, .fa-user-plus{
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.pricing{
+  margin-bottom: 3%;
+}
+.priceContent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  font-size: 1.5em;
+}
+
+.priceContent li{
+  list-style: none;
+  font-size: .75em;
+}
+
+.fa-check{
+  color: #285AA0;
+  margin-right: 1%;
+}
+
+i{
+  font-size: .75em;
+}
+.blueAccent{
+  color: #285AA0;
+}
+
+.btn{
+  margin-top: 3%;
+  border-radius: 50px;
+}
+
+.btn-outline-primary{
+  color: #285AA0;
+  border-color: #285AA0;
+}
+
+.btn-outline-primary:hover{
+  background-color: #285AA0;
+  border-color: #285AA0;
+}
 
 .footer{
   padding: 1%;
+  margin-top: 3%;
   margin-bottom: 0;
   height: 150px;
   background-color: black;
@@ -254,7 +345,7 @@ hr{
 }
 
 .footerRight{
-  grid-area: footerRight;
+  grid-area: "footerRight";
   padding-left: 3%;
 }
 /* Bouncing arrow animation */
@@ -312,4 +403,76 @@ hr{
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+}
+
+/* Image comparison slider */
+.ba-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.ba-slider img {
+    width: 100%;
+    display:block;
+    max-width:none;
+}
+
+.ba-slider .resize {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.ba-slider .handle { /* Thin line seperator */
+  position:absolute;
+  left:50%;
+  top:0;
+  bottom:0;
+  width:4px;
+  margin-left:-2px;
+
+  background: rgba(0,0,0,.5);
+  cursor: ew-resize;
+}
+
+/* .ba-slider .handle:after {
+    position: absolute;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+
+    content:'\2194';
+    color:white;
+    font-weight:bold;
+    font-size:36px;
+    text-align:center;
+    line-height:64px;
+
+    background: black;
+    border-radius: 50%;
+    transition:all 0.3s ease;
+} */
+
+
+.ba-slider .handle.ba-draggable:after {
+    width: 48px;
+    height: 48px;
+    margin: -24px 0 0 -24px;
+    line-height:50px;
+    font-size:30px;
+}
+
+.video{
+  margin-top: 15%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+video{
+  width: 100%;
+  height: auto;
 }

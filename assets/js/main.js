@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 
 //Revealing text content with scroll
-window.sr = ScrollReveal({duration:"250", delay: "350"});
+window.sr = ScrollReveal({duration:"250", delay: "100"});
 sr.reveal(".textContent");
 sr.reveal(".function")
 
@@ -34,3 +34,6 @@ $(window).scroll(function(){
     $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);
   //250 is fade pixels
   });
+
+//Image comparison slider
+$('.ba-slider').beforeAfter();
