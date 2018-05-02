@@ -1,13 +1,18 @@
 /* Mobile styles */
-@media (max-width: 1024px){
+@media (max-width: 1197px){
   .content{
     text-align: center;
     background: url(../lib/imgs/es0.png) no-repeat center center fixed;
     background-size: cover;
+    padding-bottom: 2%;
   }
 
   .landing{
     margin: auto 5%;
+  }
+
+  #jumboThree{
+    height: 500px;
   }
 
   .images{
@@ -35,6 +40,10 @@
     margin: 50% auto;
   }
 
+  .ba-slider img {
+    height: 500px;
+  }
+
   .landing{
     padding-top: 5%;
   }
@@ -42,8 +51,8 @@
 }
 
 /* Desktop Styles */
-
-@media (min-width: 1025px){
+/* Width required for the building to be full height and to properly line up highlighted floors with content is 1198px */
+@media (min-width: 1198px){
 
   .content{
     margin-right: 50%;
@@ -56,7 +65,7 @@
   }
 
   .textContent{
-    margin: 75% auto;
+    margin: 500px auto;
   }
 
   .images{
@@ -88,11 +97,14 @@
     margin-right: 5%;
   }
 
+  .ba-slider img {
+    width: 100%;
+  }
+
   .teamContent{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 1fr;
-
   }
 }
 
@@ -140,12 +152,36 @@ hr{
   background-color: white;
   margin: auto 5%;
   box-shadow:
-  0 4px 8px 0 rgba(0,0,0,0.12),
+  0 6px 8px 0 rgba(0,0,0,0.12),
   0 2px 4px 0 rgba(0,0,0,0.08);
 }
 
 .jumbotron p{
   text-align: center;
+}
+
+#jumboOne{
+  box-shadow:
+  0 6px 8px 0 rgba(255,78,255,0.22),
+  0 2px 4px 0 rgba(255,78,255,0.08);
+}
+
+#jumboTwo{
+  box-shadow:
+  0 6px 8px 0 rgba(250,122,122,0.22),
+  0 2px 4px 0 rgba(250,122,122,0.08);
+}
+
+#jumboThree{
+  box-shadow:
+  0 6px 8px 0 rgba(122,250,180,0.22),
+  0 2px 4px 0 rgba(122,250,180,0.08);
+}
+
+#jumboFour{
+  box-shadow:
+  0 6px 8px 0 rgba(122,126,250,0.22),
+  0 2px 4px 0 rgba(122,126,250,0.08);
 }
 
 .animated{
@@ -154,9 +190,6 @@ hr{
   width: 100%;
 }
 
-#lastImage{
-  position: none;
-}
 
 /* Timeline styling */
 .timeline ul li {
@@ -412,7 +445,6 @@ i{
 }
 
 .ba-slider img {
-    width: 100%;
     display:block;
     max-width:none;
 }

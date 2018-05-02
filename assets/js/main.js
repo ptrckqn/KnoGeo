@@ -2,7 +2,8 @@
 
 $(document).ready(function () {
     var pictureCount = $('.images img').length;
-    var scrollResolution = 55;
+    var width = document.body.clientWidth;
+    var scrollResolution = width / 18;
 
     animateBuilding();
 
@@ -12,6 +13,7 @@ $(document).ready(function () {
 
         if (imageIndex >= pictureCount) {
             imageIndex = pictureCount - 1; // Select last image
+            
         }
 
         $(".images img").hide();
