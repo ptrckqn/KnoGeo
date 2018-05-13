@@ -3,7 +3,17 @@
 $(document).ready(function () {
     var pictureCount = $('.images img').length;
     var width = document.body.clientWidth;
-    var scrollResolution = width / 18;
+    if (window.screen.height >= 1080) {
+      var scrollResolution = width / 19;
+    }
+    else if (window.screen.height > 720 && window.screen.height < 1080){
+      var scrollResolution = width / 17;
+    }
+    else{
+      var scrollResolution = width / 16.5;
+    }
+
+
 
     animateBuilding();
 
@@ -13,7 +23,7 @@ $(document).ready(function () {
 
         if (imageIndex >= pictureCount) {
             imageIndex = pictureCount - 1; // Select last image
-            
+
         }
 
         $(".images img").hide();
