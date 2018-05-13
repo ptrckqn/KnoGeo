@@ -3,7 +3,6 @@
 $(document).ready(function () {
   var pictureCount = $('.images img').length;
   var width = document.body.clientWidth;
-  alert(width);
 
   var scrollResolution = 70;
 
