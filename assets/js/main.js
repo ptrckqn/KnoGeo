@@ -5,15 +5,17 @@ $(document).ready(function () {
   var width = document.body.clientWidth;
   alert(width);
 
-  if (width >= 1440) {
-    var scrollResolution = width / 21;
-  }
-  else if (width < 1440 && width >= 1300){
-    var scrollResolution = width / 19;
-  }
-  else{
-    var scrollResolution = width / 17;
-  }
+  var scrollResolution = 70;
+
+  // if (width >= 1440) {
+  //   var scrollResolution = width / 21;
+  // }
+  // else if (width < 1440 && width >= 1300){
+  //   var scrollResolution = width / 19;
+  // }
+  // else{
+  //   var scrollResolution = width / 17;
+  // }
 
 
 
