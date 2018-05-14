@@ -49,6 +49,3 @@ $(window).scroll(function(){
   $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);
   //250 is fade pixels
 });
-
-//Image comparison slider
-$('.ba-slider').beforeAfter();

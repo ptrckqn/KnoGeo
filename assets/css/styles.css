@@ -11,10 +11,6 @@
     margin: auto 5%;
   }
 
-  #jumboThree{
-    height: 500px;
-  }
-
   .teamContent .jumbotron{
     margin-top: 3%;
   }
@@ -42,10 +38,6 @@
 
   .textContent{
     margin: 50% auto;
-  }
-
-  .ba-slider img {
-    height: 500px;
   }
 
   .landing{
@@ -99,10 +91,6 @@
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-  }
-
-  .ba-slider img {
-    width: 100%;
   }
 
   .teamContent{
@@ -166,6 +154,11 @@ hr{
 
 .jumbotron p{
   text-align: center;
+}
+
+.compImg{
+  display: block;
+  margin: 0 auto;
 }
 
 a{
@@ -544,67 +537,6 @@ i{
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
-}
-
-/* Image comparison slider */
-.ba-slider {
-  position: relative;
-  overflow: hidden;
-}
-
-.ba-slider img {
-  display:block;
-  max-width:none;
-}
-
-.ba-slider .resize {
-  position: absolute;
-  top:0;
-  left: 0;
-  height: 100%;
-  width: 50%;
-  overflow: hidden;
-}
-
-
-.ba-slider .handle { /* Thin line seperator */
-  position:absolute;
-  left:50%;
-  top:0;
-  bottom:0;
-  width:4px;
-  margin-left:-2px;
-
-  background: rgba(0,0,0,.5);
-  cursor: ew-resize;
-}
-
-/* .ba-slider .handle:after {
-position: absolute;
-top: 50%;
-width: 64px;
-height: 64px;
-margin: -32px 0 0 -32px;
-
-content:'\2194';
-color:white;
-font-weight:bold;
-font-size:36px;
-text-align:center;
-line-height:64px;
-
-background: black;
-border-radius: 50%;
-transition:all 0.3s ease;
-} */
-
-
-.ba-slider .handle.ba-draggable:after {
-  width: 48px;
-  height: 48px;
-  margin: -24px 0 0 -24px;
-  line-height:50px;
-  font-size:30px;
 }
 
 .video{
