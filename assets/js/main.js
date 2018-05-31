@@ -2,7 +2,8 @@
 
 $(document).ready(function () {
   var pictureCount = $('.images img').length;
-  var width = document.body.clientWidth;
+  var width = screen.width;
+  var height = screen.height;
 
   var scrollResolution = 70;
 
@@ -49,3 +50,6 @@ $(window).scroll(function(){
   $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);
   //250 is fade pixels
 });
+
+//Image comparison slider
+$('.cocoen').cocoen();
