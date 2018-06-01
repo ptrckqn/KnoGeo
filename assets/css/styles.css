@@ -81,6 +81,33 @@
     font-size: 3em;
   }
 
+  .firstArrow{
+    border: rgb(255,78,255) solid;
+  }
+  .secondArrow{
+    border: rgb(250,122,122) solid;
+  }
+  .thirdArrow{
+    border: rgb(122,250,180) solid;
+  }
+
+  .fourthArrow{
+    border: rgb(122,126,250) solid;
+  }
+  .loaderArrow{
+    opacity: 0;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-top: -5px;
+    -webkit-animation: fadeIn 0.8s infinite alternate ease;
+    animation: fadeIn 0.8s infinite alternate ease;
+    -webkit-animation-delay: 0.88s;
+    animation-delay: 0.88s;
+  }
+
 
   .technical{
     width: 100vw;
@@ -128,7 +155,7 @@ h3{
 
 h5{
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.25em;
   margin-top: 0px;
   font-weight: 400;
 }
@@ -257,6 +284,14 @@ a:hover{
 .loader div:nth-child(10) {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
+}
+
+@-webkit-keyframes fadeIn{
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn{
+  100% {opacity: 1;}
 }
 
 @-webkit-keyframes go {
