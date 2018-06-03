@@ -287,10 +287,12 @@ a:hover{
 }
 
 @-webkit-keyframes fadeIn{
+  40% {opacity: 0;}
   100% {opacity: 1;}
 }
 
 @keyframes fadeIn{
+  40% {opacity: 0;}
   100% {opacity: 1;}
 }
 
