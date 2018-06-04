@@ -51,4 +51,6 @@ $(window).scroll(function(){
 });
 
 //Image comparison slider
-$('.cocoen').cocoen();
+window.onload = function() {
+ $('.ba-slider').beforeAfter();
+}
