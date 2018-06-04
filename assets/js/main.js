@@ -3,22 +3,13 @@
 $(document).ready(function () {
   var pictureCount = $('.images img').length;
   var width = document.documentElement.clientWidth;
-  var height = document.documentElement.clientHeight;
-
-  alert("width: " + width);
-  alert("height: " + height);
 
   if (width <= 1680) {
      var scrollResolution = 70;
    }
-  //  else if (width > 1680 && width <= 2000){
-  //   var scrollResolution = 71.5;
-  // }
    else{
      var scrollResolution = 71.5;
    }
-
-alert(scrollResolution);
 
   animateBuilding();
 
