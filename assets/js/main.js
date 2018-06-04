@@ -11,11 +11,11 @@ $(document).ready(function () {
   if (width <= 1680) {
      var scrollResolution = 70;
    }
-   else if (width > 1680 && width < 1920){
+   else if (width > 1680 && width <= 2000){
     var scrollResolution = 71.5;
   }
    else{
-     var scrollResolution = 73;
+     var scrollResolution = 72;
    }
 
 alert(scrollResolution);
