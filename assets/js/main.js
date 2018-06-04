@@ -5,8 +5,8 @@ $(document).ready(function () {
   var width = screen.width;
   var height = screen.height;
 
-  alert(document.documentElement.width);
-  alert(document.documentElement.height);
+  alert(width);
+  alert(height);
 
   var scrollResolution = 70;
 
