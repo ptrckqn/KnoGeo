@@ -2,8 +2,8 @@
 
 $(document).ready(function () {
   var pictureCount = $('.images img').length;
-  var width = screen.width;
-  var height = screen.height;
+  var width = document.documentElement.clientWidth;
+  var height = document.documentElement.clientHeight;
 
   alert("width: " + width);
   alert("height: " + height);
