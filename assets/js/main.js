@@ -8,19 +8,17 @@ $(document).ready(function () {
   alert("width: " + width);
   alert("height: " + height);
 
-  var scrollResolution = 70;
-
-  // if (width >= 1440) {
-  //   var scrollResolution = width / 21;
-  // }
-  // else if (width < 1440 && width >= 1300){
-  //   var scrollResolution = width / 19;
-  // }
+  if (width <= 1680) {
+     var scrollResolution = 70;
+   }
+   else if (width <= 1920){
+    var scrollResolution = 80;
+  }
   // else{
   //   var scrollResolution = width / 17;
   // }
 
-
+alert(scrollResolution);
 
   animateBuilding();
 
