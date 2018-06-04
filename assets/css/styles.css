@@ -219,6 +219,14 @@ a:hover{
   0 2px 4px 0 rgba(122,126,250,0.08);
 }
 
+#jumboBeta{
+  box-shadow: 0 0 0 0;
+}
+
+.beta{
+  margin-top: 3%;
+}
+
 .animated{
   display:none;
   height:auto;
