@@ -5,6 +5,9 @@ $(document).ready(function () {
   var width = screen.width;
   var height = screen.height;
 
+  alert(document.documentElement.width);
+  alert(document.documentElement.height);
+
   var scrollResolution = 70;
 
   // if (width >= 1440) {
