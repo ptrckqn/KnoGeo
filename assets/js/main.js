@@ -12,7 +12,7 @@ $(document).ready(function () {
      var scrollResolution = 70;
    }
    else if (width <= 1920){
-    var scrollResolution = 80;
+    var scrollResolution = 75;
   }
   // else{
   //   var scrollResolution = width / 17;
