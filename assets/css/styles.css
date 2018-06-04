@@ -2,8 +2,8 @@
 @media (max-width: 1197px){
   .content{
     text-align: center;
-    background: url(../lib/imgs/es0.png) no-repeat center center fixed;
-    background-size: cover;
+    /* background: url(../lib/imgs/es0.png) no-repeat center center fixed;
+    background-size: cover; */
     padding-bottom: 2%;
   }
 
@@ -16,7 +16,10 @@
   }
 
   .images{
-    opacity: 0;
+    /* opacity: 0; */
+    position: fixed;
+    top: 0;
+    z-index: -1;
   }
 
   .timeline ul li div {
@@ -42,6 +45,10 @@
 
   .landing{
     padding-top: 5%;
+  }
+
+  .footer p, .footer a{
+    font-size: 0.9em;
   }
 
 }
@@ -124,6 +131,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 1fr;
+  }
+
+  .footer p, .footer a{
+    font-size: 1.25em;
   }
 }
 
@@ -510,7 +521,6 @@ i{
 
 .footer p, .footer a{
   color: white;
-  font-size: 1.25em;
 }
 
 .footerLeft{

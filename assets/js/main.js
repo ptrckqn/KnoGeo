@@ -4,7 +4,14 @@ $(document).ready(function () {
   var pictureCount = $('.images img').length;
   var width = document.documentElement.clientWidth;
 
-  if (width <= 1680) {
+
+  if (width <= 766){
+    var scrollResolution = 60;
+  }
+  else if(width <= 1197 && width > 766 ){
+    var scrollResolution = 68.5;
+  }
+  else if (width <= 1680 && width > 1197) {
      var scrollResolution = 70;
    }
    else{
