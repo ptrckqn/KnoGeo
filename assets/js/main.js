@@ -50,7 +50,11 @@ $(window).scroll(function(){
   //250 is fade pixels
 });
 
-var deviceWidth = document.documentElement.clientWidth;
-if (deviceWidth <= 1197){
-  $("#landingContent").addClass(".jumbotron");
-}
+
+//Adding a jumbotron class to the landing content if the device is mobile/mobile resolution
+$(document).ready(function(){
+  var deviceWidth = document.documentElement.clientWidth;
+  if (deviceWidth <= 1197){
+    $("#landingContent").addClass(".jumbotron");
+  }
+});
