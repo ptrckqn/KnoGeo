@@ -49,3 +49,8 @@ $(window).scroll(function(){
   $(".arrow").css("opacity", 1 - $(window).scrollTop() / 500);
   //250 is fade pixels
 });
+
+//Adding a jumbotron to the landing text if on Mobile
+if(width <= 1197){
+  $('.landing').addClass('.jumbotron');
+}
