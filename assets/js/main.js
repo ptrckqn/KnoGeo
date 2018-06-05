@@ -50,10 +50,7 @@ $(window).scroll(function(){
   //250 is fade pixels
 });
 
-//Adding a jumbotron to the landing text if on Mobile
-$(document).ready(function(){
-  var deviceWidth = document.documentElement.clientWidth;
-  if(deviceWidth <= 1197){
-    $('.landing').addClass('.jumbotron');
-  }
-});
+var deviceWidth = document.documentElement.clientWidth;
+if (deviceWidth <= 1197){
+  $("#landingContent").addClass(".jumbotron");
+}
