@@ -55,6 +55,6 @@ $(window).scroll(function(){
 $(document).ready(function(){
   var deviceWidth = document.documentElement.clientWidth;
   if (deviceWidth <= 1197){
-    $("#landingContent").addClass(".jumbotron");
+    $("#landingContent").addClass("jumbotron");
   }
 });

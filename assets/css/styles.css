@@ -11,6 +11,10 @@
     margin: auto 5%;
   }
 
+  #landingContent{
+    margin-top: 2%;
+  }
+
   .teamContent .jumbotron{
     margin-top: 3%;
   }
