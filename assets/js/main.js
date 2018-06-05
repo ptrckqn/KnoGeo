@@ -51,7 +51,9 @@ $(window).scroll(function(){
 });
 
 //Adding a jumbotron to the landing text if on Mobile
-var deviceWidth = document.documentElement.clientWidth;
-if(deviceWidth <= 1197){
-  $('.landing').addClass('.jumbotron');
-}
+$(document).ready(function(){
+  var deviceWidth = document.documentElement.clientWidth;
+  if(deviceWidth <= 1197){
+    $('.landing').addClass('.jumbotron');
+  }
+});
