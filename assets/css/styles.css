@@ -1,5 +1,8 @@
 /* Mobile styles */
 @media (max-width: 1197px){
+  html, body{
+    width: 100vw;
+  }
   .content{
     text-align: center;
     /* background: url(../lib/imgs/es0.png) no-repeat center center fixed;
