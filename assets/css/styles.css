@@ -45,6 +45,11 @@
     padding-top: 5%;
   }
 
+  video{
+    width: 100%;
+    height: auto;
+  }
+
   .footer p, .footer a{
     font-size: 0.9em;
   }
@@ -133,6 +138,11 @@
 
   .footer p, .footer a{
     font-size: 1.25em;
+  }
+
+  video{
+    width: auto;
+    height: 85vw;
   }
 }
 
@@ -600,6 +610,4 @@ i{
 video{
   display: block;
   margin: 0 auto;
-  width: auto;
-  height: 85vh;
 }
