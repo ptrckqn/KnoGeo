@@ -54,7 +54,7 @@ $(window).scroll(function(){
 //Adding a jumbotron class to the landing content if the device is mobile/mobile resolution
 $(document).ready(function(){
   var deviceWidth = document.documentElement.clientWidth;
-  if (deviceWidth <= 1197){
+  if (deviceWidth <= 1024){
     $("#landingContent").addClass("jumbotron");
   }
 });
