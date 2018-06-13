@@ -1,7 +1,8 @@
 /* Mobile styles */
 @media (max-width: 1197px){
   html, body{
-    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
   }
   .content{
     text-align: center;
