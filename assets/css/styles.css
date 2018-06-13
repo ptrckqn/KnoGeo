@@ -1,5 +1,5 @@
 /* Mobile styles */
-@media (max-width: 1197px){
+@media (max-width: 1024px){
   html, body{
     max-width: 100%;
     overflow-x: hidden;
@@ -57,7 +57,7 @@
 
 /* Desktop Styles */
 /* Width required for the building to be full height and to properly line up highlighted floors with content is 1198px */
-@media (min-width: 1198px){
+@media (min-width: 1025px){
 
   .content{
     margin-right: 50%;
