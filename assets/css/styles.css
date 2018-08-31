@@ -1,5 +1,6 @@
 @media (max-width: 1024px){
-  .advantages{
+  .advantages div{
+    padding-bottom: 0;
   }
 
   .demoVidContainer {
