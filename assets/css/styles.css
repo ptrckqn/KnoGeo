@@ -20,10 +20,14 @@
 }
 
 @media (min-width: 1025px){
-  .advantages{
+  /* .advantages{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  } */
+
+  .advantages div{
+    padding-bottom: 0;
   }
 
   .demoVidContainer {
@@ -79,19 +83,18 @@ a:hover{
 }
 
 .btn-outline-primary{
-  color: #333333;
-  border-color: #333333;
+  color: #285AA0;
+  border-color: #285AA0;
 }
 
 .btn-outline-primary:hover{
-  background-color: #333333;
-  border-color: #333333;
+  background-color: #285AA0;
+  border-color: #285AA0;
 }
 
 .demo p{
   padding-bottom: 3%;
   margin: auto 25%;
-  text-align: justify;
 }
 
 .demoVidContainer {
@@ -157,7 +160,7 @@ a:hover{
 h2{
   padding-top: 5%;
   font-weight: 100;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
 }
 
@@ -175,6 +178,11 @@ hr{
 
 html{
   width: 100%;
+}
+
+#hylyteContent{
+    text-align: center;
+    font-size: 1.25em;
 }
 
 .intro{
@@ -226,6 +234,11 @@ nav{
 
 .tagLine{
   font-weight: 400;
+}
+
+.textContent{
+  text-align: center;
+  font-size: 1.25em;
 }
 
 ul{
