@@ -8,6 +8,11 @@
     padding-left: 10%;
   }
 
+  .tagLine{
+    font-size: 1.75em;
+    font-weight: 500;
+  }
+
   nav{
     padding-top: 2.5%;
     padding-bottom: 2.5%;
@@ -17,26 +22,34 @@
     font-size: 1.1em;
   }
 
+  .subLine{
+    font-weight: 400;
+    font-size: 1.25em;
+  }
+
 }
 
 @media (min-width: 1025px){
-  /* .advantages{
+
+  .buyingContent{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-  } */
-
-  .advantages div{
-    padding-bottom: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    padding: auto;
   }
-
   .demoVidContainer {
     width: 60%;
     padding-left: 20%;
   }
 
   .intro{
-      background-attachment: fixed;
+    background-attachment: fixed;
+  }
+
+  .listingContent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
   }
 
   nav{
@@ -47,6 +60,15 @@
   .navLink{
     font-size: 1.5em;
   }
+
+  .subLine{
+    font-weight: 400;
+    font-size: 1.75em;
+  }
+
+  .tagLine{
+    font-weight: 400;
+  }
 }
 
 a:hover{
@@ -56,19 +78,23 @@ a:hover{
 .advantages{
   background-color: #eeeeee;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .advantages div{
   width: 100%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .advantages p{
   text-align: center;
   margin: auto 5%;
+}
+
+.advIcon{
+  padding-bottom: 10%;
 }
 
 #betaButton{
@@ -91,6 +117,7 @@ a:hover{
   background-color: #285AA0;
   border-color: #285AA0;
 }
+
 
 .demo p{
   padding-bottom: 3%;
@@ -170,6 +197,9 @@ h5{
   font-size: 2em;
 }
 
+h6{
+  font-size: 1.25em;
+}
 hr{
   width: 50%;
   border-top: 1px solid #f8f8f8;
@@ -181,8 +211,8 @@ html{
 }
 
 #hylyteContent{
-    text-align: center;
-    font-size: 1.25em;
+  text-align: center;
+  font-size: 1.25em;
 }
 
 .intro{
@@ -226,14 +256,7 @@ nav{
 }
 
 .subLine{
-  color: #3a3a3a ;
-  font-weight: 400;
-  font-size: 1.75em;
   margin: auto 15%;
-}
-
-.tagLine{
-  font-weight: 400;
 }
 
 .textContent{
