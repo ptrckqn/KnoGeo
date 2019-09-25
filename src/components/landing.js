@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 
 import Brand from "./brand"
 import ArrowButtonRight from "./arrowButtonRight"
+import ArrowButtonLeft from "./arrowButtonLeft"
 
 const moveInLeft = keyframes`
     0%{
@@ -135,8 +136,11 @@ const Landing = () => (
         better analysis, presentation, and understanding
       </Secondary>
     </Header>
-    <ArrowButtonRight>
+    <ArrowButtonLeft>
       <ButtonText>Explore KnoGeo Residential</ButtonText>
+    </ArrowButtonLeft>
+    <ArrowButtonRight>
+      <ButtonText>Explore KnoGeo Commercial</ButtonText>
     </ArrowButtonRight>
   </>
 )
