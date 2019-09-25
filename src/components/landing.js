@@ -104,6 +104,7 @@ const ButtonText = styled.span`
   margin: 0 1.6rem;
   font-size: 2.5rem;
   transition: transform 0.2s;
+  text-transform: capitalize;
 `
 
 const Navigation = styled.div`
@@ -111,6 +112,11 @@ const Navigation = styled.div`
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  width: 100%;
 `
 
 const Landing = () => (
@@ -145,10 +151,14 @@ const Landing = () => (
     </Header>
     <Navigation>
       <ArrowButtonLeft>
-        <ButtonText>Explore KnoGeo Residential</ButtonText>
+        <NavLink to="/residential">
+          <ButtonText>Explore KnoGeo Residential</ButtonText>
+        </NavLink>
       </ArrowButtonLeft>
       <ArrowButtonRight>
-        <ButtonText>Explore KnoGeo Commercial</ButtonText>
+        <NavLink to="/commercial">
+          <ButtonText>Explore KnoGeo Commercial</ButtonText>
+        </NavLink>
       </ArrowButtonRight>
     </Navigation>
   </>
