@@ -75,13 +75,6 @@ const Left = styled(Arrow)`
     ${ArrowContainer}:hover & {
       width: 6rem;
       transition-delay: 0.1s;
-      &::before,
-      &::after {
-        width: 0;
-        transition-delay: 0.1s;
-        transform: rotate(0);
-        transition: all 0.1s;
-      }
     }
   }
 `

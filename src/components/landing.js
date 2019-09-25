@@ -106,6 +106,12 @@ const ButtonText = styled.span`
   transition: transform 0.2s;
 `
 
+const Navigation = styled.div`
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+`
+
 const Landing = () => (
   <>
     <Nav>
@@ -136,12 +142,14 @@ const Landing = () => (
         better analysis, presentation, and understanding
       </Secondary>
     </Header>
-    <ArrowButtonLeft>
-      <ButtonText>Explore KnoGeo Residential</ButtonText>
-    </ArrowButtonLeft>
-    <ArrowButtonRight>
-      <ButtonText>Explore KnoGeo Commercial</ButtonText>
-    </ArrowButtonRight>
+    <Navigation>
+      <ArrowButtonLeft>
+        <ButtonText>Explore KnoGeo Residential</ButtonText>
+      </ArrowButtonLeft>
+      <ArrowButtonRight>
+        <ButtonText>Explore KnoGeo Commercial</ButtonText>
+      </ArrowButtonRight>
+    </Navigation>
   </>
 )
 
