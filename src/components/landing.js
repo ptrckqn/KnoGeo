@@ -2,7 +2,6 @@ import React from "react"
 import styled, { keyframes, css } from "styled-components"
 import { Link } from "gatsby"
 
-import Brand from "./brand"
 import ArrowButtonRight from "./arrowButtonRight"
 import ArrowButtonLeft from "./arrowButtonLeft"
 
@@ -38,29 +37,6 @@ const moveInRight = keyframes`
     }
 `
 
-const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  height: 8rem;
-  padding: 3rem;
-`
-
-const BrandBox = styled(Link)`
-  height: 100%;
-  width: 15rem;
-  position: relative;
-`
-
-const NavLinks = styled.ul`
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
-  align-items: center;
-`
-
-const NavItem = styled.li``
-
 const NavLink = styled(Link)`
   color: #efefef;
   text-decoration: none;
@@ -70,7 +46,6 @@ const NavLink = styled(Link)`
 const Header = styled.span`
   position: absolute;
   width: 55%;
-  text-align: right;
   top: 40%;
   left: 35%;
   transform: translate(-50%, -50%);
@@ -86,6 +61,7 @@ const Primary = styled.h2`
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 4rem;
+  line-height: 1.2;
   animation: ${css`
     ${moveInLeft} 1s ease-out
   `};
@@ -94,7 +70,8 @@ const Primary = styled.h2`
 const Secondary = styled.h3`
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.7rem;
+  line-height: 1.3;
   animation: ${css`
     ${moveInRight} 1s ease-out
   `};
@@ -110,7 +87,7 @@ const ButtonText = styled.span`
 const Navigation = styled.div`
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   position: absolute;
   left: 50%;
@@ -121,25 +98,6 @@ const Navigation = styled.div`
 
 const Landing = () => (
   <>
-    <Nav>
-      <BrandBox>
-        <Brand fillOne="#efefef" fillTwo="#efefef" />
-      </BrandBox>
-      <NavLinks>
-        <NavItem>
-          <NavLink to="/residential">Residential</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="/commerical">Commerical</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="/blog">Blog</NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="/team">Team</NavLink>
-        </NavItem>
-      </NavLinks>
-    </Nav>
     <Header>
       <Primary>
         Patented Platform for Visualizing Real Estate Data in 3D
