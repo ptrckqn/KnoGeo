@@ -2,13 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-`
-
 const ArrowContainer = styled(Link)`
   display: inline-block;
   color: #ccc;
@@ -24,7 +17,7 @@ const ArrowContainer = styled(Link)`
 
 const Arrow = styled.span`
   width: 6rem;
-  transition: all 0.2s;
+  transition: transform 0.2s;
 `
 
 const Line = styled.span`
@@ -32,12 +25,12 @@ const Line = styled.span`
   display: block;
   height: 1px;
   position: relative;
-  transition: all 0.2s;
+  transition: transform 0.2s;
 
   &::before,
   &::after {
     content: "";
-    background: #ccc;
+    background-color: #ccc;
     display: block;
     height: 1px;
     position: absolute;
@@ -50,6 +43,13 @@ const Line = styled.span`
   }
   &::after {
     transform-origin: bottom right;
+  }
+  ${ArrowContainer}:hover & {
+    background-color: #efefef;
+    &::before,
+    &::after {
+      background-color: #efefef;
+    }
   }
 `
 
@@ -69,23 +69,20 @@ const Left = styled(Arrow)`
 `
 
 const Right = styled(Arrow)`
-  top: 3px;
   ${Line} {
     width: 6rem;
     transition-delay: 0.2s;
-
     &::before,
     &::after {
       width: 8px;
       transition-delay: 0.3s;
-      transition: all 0.5s;
     }
 
     &::before {
       transform: rotate(40deg);
     }
     &::after {
-      transform: rotate(-40deg;);
+      transform: rotate(-40deg);
     }
   }
 `
@@ -94,27 +91,21 @@ const Main = styled.span`
   display: flex;
   align-items: center;
 `
-const Text = styled.span`
-  font-size: 1.6rem;
-  margin: 0 1.6rem;
-`
 
-const ArrowButton = ({ text }) => {
+const ArrowButtonRight = ({ children }) => {
   return (
-    <Container>
-      <ArrowContainer>
-        <Left>
+    <ArrowContainer>
+      <Left>
+        <Line />
+      </Left>
+      <Main>
+        {children}
+        <Right>
           <Line />
-        </Left>
-        <Main>
-          <Text>{text}</Text>
-          <Right>
-            <Line />
-          </Right>
-        </Main>
-      </ArrowContainer>
-    </Container>
+        </Right>
+      </Main>
+    </ArrowContainer>
   )
 }
 
-export default ArrowButton
+export default ArrowButtonRight

@@ -3,7 +3,7 @@ import styled, { keyframes, css } from "styled-components"
 import { Link } from "gatsby"
 
 import Brand from "./brand"
-import ArrowButton from "./arrowButton"
+import ArrowButtonRight from "./arrowButtonRight"
 
 const moveInLeft = keyframes`
     0%{
@@ -99,6 +99,12 @@ const Secondary = styled.h3`
   `};
 `
 
+const ButtonText = styled.span`
+  margin: 0 1.6rem;
+  font-size: 2.5rem;
+  transition: transform 0.2s;
+`
+
 const Landing = () => (
   <>
     <Nav>
@@ -129,7 +135,9 @@ const Landing = () => (
         better analysis, presentation, and understanding
       </Secondary>
     </Header>
-    <ArrowButton text="Explore KnoGeo Residential" />
+    <ArrowButtonRight>
+      <ButtonText>Explore KnoGeo Residential</ButtonText>
+    </ArrowButtonRight>
   </>
 )
 
