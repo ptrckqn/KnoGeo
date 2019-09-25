@@ -1,8 +1,8 @@
-import React from "react"
-import styled, { keyframes, css } from "styled-components"
-import { Link } from "gatsby"
+import React from "react";
+import styled, { keyframes, css } from "styled-components";
+import { Link } from "gatsby";
 
-import Brand from "./brand"
+import Brand from "./brand";
 
 const moveInLeft = keyframes`
     0%{
@@ -18,7 +18,7 @@ const moveInLeft = keyframes`
         opacity: 1;
         transform: translate(0);
     }
-`
+`;
 
 const moveInRight = keyframes`
     0%{
@@ -34,34 +34,36 @@ const moveInRight = keyframes`
         opacity: 1;
         transform: translate(0);
     }
-`
+`;
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 8rem;
-  padding: 1.5rem 3rem;
-`
+  padding: 3rem;
+`;
 
 const BrandBox = styled(Link)`
   height: 100%;
   width: 15rem;
-`
+  position: relative;
+`;
 
 const NavLinks = styled.ul`
   list-style: none;
   display: flex;
   justify-content: space-around;
   width: 50%;
-`
+  align-items: center;
+`;
 
-const NavItem = styled.li``
+const NavItem = styled.li``;
 
 const NavLink = styled(Link)`
   color: #efefef;
   text-decoration: none;
   text-transform: uppercase;
-`
+`;
 
 const Header = styled.span`
   position: absolute;
@@ -70,13 +72,13 @@ const Header = styled.span`
   top: 40%;
   left: 35%;
   transform: translate(-50%, -50%);
-`
+`;
 
 const Title = styled.h1`
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 5rem;
-`
+`;
 
 const Primary = styled.h2`
   font-family: "Playfair Display", serif;
@@ -85,7 +87,7 @@ const Primary = styled.h2`
   animation: ${css`
     ${moveInLeft} 1s ease-out
   `};
-`
+`;
 
 const Secondary = styled.h3`
   font-family: "Playfair Display", serif;
@@ -94,7 +96,7 @@ const Secondary = styled.h3`
   animation: ${css`
     ${moveInRight} 1s ease-out
   `};
-`
+`;
 
 const Landing = () => (
   <>
@@ -127,6 +129,6 @@ const Landing = () => (
       </Secondary>
     </Header>
   </>
-)
+);
 
-export default Landing
+export default Landing;
