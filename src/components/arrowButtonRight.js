@@ -25,7 +25,7 @@ const Line = styled.span`
   display: block;
   height: 1px;
   position: relative;
-  transition: transform 0.2s;
+  transition: transform 0.2s, width 0.2s;
 
   &::before,
   &::after {
@@ -65,6 +65,25 @@ const Left = styled(Arrow)`
     &::after {
       transform: rotate(0);
     }
+
+    ${ArrowContainer}:hover & {
+      width: 6rem;
+      transition-delay: 0.1s;
+
+      &::before,
+      &::after {
+        width: 8px;
+        transition-delay: 0.1s;
+      }
+
+      &:before {
+        transform: rotate(40deg);
+      }
+
+      &:after {
+        transform: rotate(-40deg);
+      }
+    }
   }
 `
 
@@ -84,12 +103,28 @@ const Right = styled(Arrow)`
     &::after {
       transform: rotate(-40deg);
     }
+
+    ${ArrowContainer}:hover & {
+      width: 0;
+      transition-delay: 0.1s;
+      &::before,
+      &::after {
+        width: 0;
+        transition-delay: 0.1s;
+        transform: rotate(0);
+        transition: all 0.1s;
+      }
+    }
   }
 `
 
 const Main = styled.span`
   display: flex;
   align-items: center;
+  transition: transform 0.2s;
+  ${ArrowContainer}:hover & {
+    transform: translateX(7.6rem);
+  }
 `
 
 const ArrowButtonRight = ({ children }) => {
