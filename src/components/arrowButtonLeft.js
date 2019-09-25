@@ -21,6 +21,7 @@ const Arrow = styled.span`
 `
 
 const Line = styled.span`
+  float: right;
   background-color: #ccc;
   display: block;
   height: 1px;
@@ -35,14 +36,14 @@ const Line = styled.span`
     height: 1px;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     transition: all 0.2s;
   }
   &::before {
-    transform-origin: top right;
+    transform-origin: top left;
   }
   &::after {
-    transform-origin: bottom right;
+    transform-origin: bottom left;
   }
   ${ArrowContainer}:hover & {
     background-color: #efefef;
@@ -81,7 +82,7 @@ const Main = styled.span`
   align-items: center;
   transition: transform 0.2s;
   ${ArrowContainer}:hover & {
-    transform: translateX(7.6rem);
+    transform: translateX(-7.6rem);
   }
 `
 
@@ -89,10 +90,10 @@ const ArrowButtonLeft = ({ children }) => {
   return (
     <ArrowContainer>
       <Main>
-        {children}
         <Left>
           <Line />
         </Left>
+        {children}
       </Main>
     </ArrowContainer>
   )
