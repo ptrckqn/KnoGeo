@@ -16,9 +16,6 @@ const Details = styled.div`
   background-color: rgba(0, 0, 0, 0.8);
   padding: 5rem 3rem;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 `
 
 const Header = styled.h4`
