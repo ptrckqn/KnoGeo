@@ -51,12 +51,6 @@ const Header = styled.span`
   transform: translate(-50%, -50%);
 `
 
-const Title = styled.h1`
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 5rem;
-`
-
 const Primary = styled.h2`
   font-family: "Playfair Display", serif;
   font-weight: 700;
