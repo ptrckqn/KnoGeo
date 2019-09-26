@@ -5,13 +5,17 @@ const Container = styled.section`
   margin: 50rem 0;
   background: url(images/2dmap.png) center center/cover no-repeat;
   height: 75rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
 `
 
 const Details = styled.div`
   width: 40%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  padding: 3rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5rem 3rem;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
