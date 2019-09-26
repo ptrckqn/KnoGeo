@@ -6,10 +6,9 @@ import Landing from "../components/landing"
 
 const Container = styled.div`
   position: relative;
-  width: 100vw;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/images/hero3.jpg) center right/cover no-repeat;
+    url(/images/hero4.jpg) center left/cover no-repeat;
 `
 
 const Skyline = styled.img`

@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { keyframes, css } from "styled-components"
+import styled, { keyframes } from "styled-components"
 import { Link } from "gatsby"
 
 import ArrowButtonRight from "./arrowButtonRight"
@@ -62,9 +62,7 @@ const Primary = styled.h2`
   font-weight: 700;
   font-size: 4rem;
   line-height: 1.2;
-  animation: ${css`
-    ${moveInLeft} 1s ease-out
-  `};
+  animation: ${moveInLeft} 1s ease-out;
 `
 
 const Secondary = styled.h3`
@@ -72,9 +70,7 @@ const Secondary = styled.h3`
   font-weight: 400;
   font-size: 2.7rem;
   line-height: 1.3;
-  animation: ${css`
-    ${moveInRight} 1s ease-out
-  `};
+  animation: ${moveInRight} 1s ease-out;
 `
 
 const ButtonText = styled.span`
