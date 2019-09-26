@@ -27,7 +27,7 @@ const Details = styled.span`
 `
 
 const Header = styled.h4`
-  font-size: 2.5rem;
+  font-size: 5rem;
 `
 
 const Paragraph = styled.p`

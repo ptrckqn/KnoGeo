@@ -11,9 +11,9 @@ const Container = styled.section`
 
 const Details = styled.div`
   position: absolute;
-  bottom: 10%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -25,7 +25,13 @@ const Details = styled.div`
 `
 
 const Section = styled.div`
-  grid-column: 1 / -1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50%;
 `
 
@@ -70,12 +76,11 @@ const Heading = ({ image, title, primary, secondary, cta }) => (
       <Title>{title}</Title>
 
       <Primary>{primary}</Primary>
-
-      <Section>
-        <CTA to="/">{cta}</CTA>
-        <Secondary>{secondary}</Secondary>
-      </Section>
     </Details>
+    <Section>
+      <CTA to="/">{cta}</CTA>
+      <Secondary>{secondary}</Secondary>
+    </Section>
   </Container>
 )
 

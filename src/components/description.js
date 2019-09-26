@@ -6,7 +6,7 @@ const Container = styled.section`
   display: grid;
   grid-template-columns: 2fr 1fr;
   max-width: 100rem;
-  margin: 50rem auto;
+  margin: 25rem auto;
 `
 
 const Details = styled.div`
@@ -14,7 +14,7 @@ const Details = styled.div`
 `
 
 const Header = styled.h4`
-  font-size: 2.5rem;
+  font-size: 5rem;
 `
 
 const Paragraph = styled.p`
@@ -32,15 +32,15 @@ const Secondary = styled(Details)`
 `
 
 const CTA = styled(Link)`
-  color: #efefef;
+  color: #0074b8;
   text-decoration: none;
   padding: 1.5rem 3rem;
-  border: 1px solid #efefef;
+  border: 1px solid #0074b8;
   border-radius: 30px;
   transition: all 0.3s;
   &:hover {
-    background-color: #efefef;
-    color: #202020;
+    background-color: #0074b8;
+    color: #efefef;
   }
 `
 
