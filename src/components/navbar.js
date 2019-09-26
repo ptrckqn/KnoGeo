@@ -40,7 +40,7 @@ const NavLink = styled(Link)`
 
 const Navbar = () => (
   <Nav>
-    <BrandBox>
+    <BrandBox to="/">
       <Brand fillOne="#efefef" fillTwo="#efefef" />
     </BrandBox>
     <NavLinks>

@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Heading from "../components/heading"
 import Device from "../components/device"
 import TwoDimensional from "../components/twoDimensional"
+import Flyover from "../components/flyover"
 
 const ResidentialPage = () => {
   return (
@@ -18,6 +19,7 @@ const ResidentialPage = () => {
       />
       <Device />
       <TwoDimensional />
+      <Flyover />
     </Layout>
   )
 }
