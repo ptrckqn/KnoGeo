@@ -2,11 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.section`
-  margin: 25rem 0;
+  margin: 50rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 90vh);
-  grid-row-gap: 15rem;
+  grid-row-gap: 50vh;
   overflow: hidden;
 `
 
