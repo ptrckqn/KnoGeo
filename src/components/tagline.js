@@ -10,7 +10,7 @@ const Container = styled.span`
   text-align: center;
   display: block;
   span {
-    color: #0074b8;
+    color: #285aa0;
   }
 `
 

@@ -6,7 +6,7 @@ import Navbar from "./navbar"
 /*
 Colour Pallette
 
-Main: #0074b8
+Main: #285AA0
 Accent: #ECA400
 Background: #202020
 Alt Background: #131418
