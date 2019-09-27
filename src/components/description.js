@@ -61,7 +61,7 @@ const Description = () => (
         Get your Manhattan Showcase today to be on the cutting-edge of agent +
         client focused real estate technology
       </Paragraph>
-      <CTA>Get Your Showcase</CTA>
+      <CTA to="#">Get Your Showcase</CTA>
     </Secondary>
   </Container>
 )

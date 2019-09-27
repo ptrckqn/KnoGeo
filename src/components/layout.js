@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components"
 
 import SEO from "./seo"
 import Navbar from "./navbar"
+import ScrollToTop from "./scrollToTop"
 /*
 Colour Pallette
 
@@ -52,6 +53,7 @@ const Layout = ({ title, children }) => (
     <GlobalStyle />
     <SEO title={title} />
     <Navbar />
+    <ScrollToTop />
     {children}
   </>
 )
