@@ -6,7 +6,7 @@ const Container = styled.section`
   display: grid;
   grid-template-columns: 2fr 1fr;
   max-width: 100rem;
-  margin: 25rem auto;
+  margin: 50rem auto 25rem;
 `
 
 const Details = styled.div`
@@ -24,7 +24,7 @@ const Paragraph = styled.p`
 
 const Secondary = styled(Details)`
   border-radius: 10px;
-  background-color: #131418;
+  background-color: #191919;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

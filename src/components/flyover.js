@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Container = styled.section`
   margin: 50rem 0;
-  height: 425vh;
+  height: 400vh;
   display: grid;
   grid-template-columns: 1fr 55% 1fr;
   grid-template-rows: 75vh 100vh 75vh 100vh;
@@ -58,7 +58,7 @@ const Flyover = () => {
           working with out-of-town clients.
         </Details>
       </Left>
-      <Video>
+      <Video autoplay muted controls>
         <source src="videos/flyover.mp4" type="video/mp4" />
       </Video>
       <Right>

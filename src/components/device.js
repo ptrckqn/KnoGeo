@@ -22,7 +22,7 @@ const Phone = styled.div`
 `
 
 const Details = styled.span`
-  padding: 3rem;
+  padding: 5rem 3rem;
   align-self: center;
 `
 

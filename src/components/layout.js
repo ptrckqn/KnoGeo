@@ -8,7 +8,7 @@ Colour Pallette
 
 Main: #0074b8
 Accent: #ECA400
-Background: ##202020
+Background: #202020
 Alt Background: #131418
 Text: #efefef
 */

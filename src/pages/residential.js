@@ -11,10 +11,11 @@ import Building from "../components/building"
 import Description from "../components/description"
 
 const Features = styled.section`
+  margin: -25rem 0 25rem;
   padding: 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: #131418;
+  background-color: #191919;
   grid-column-gap: 5rem;
 `
 
