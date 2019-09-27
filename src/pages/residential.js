@@ -9,6 +9,7 @@ import Flyover from "../components/flyover"
 import Feature from "../components/feature"
 import Building from "../components/building"
 import Description from "../components/description"
+import Footer from "../components/footer"
 
 const Features = styled.section`
   margin: -25rem 0 25rem;
@@ -50,6 +51,7 @@ const ResidentialPage = () => {
         ></Feature>
       </Features>
       <Description />
+      <Footer />
     </Layout>
   )
 }

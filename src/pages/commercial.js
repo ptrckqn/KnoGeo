@@ -6,7 +6,9 @@ import Heading from "../components/heading"
 import Block from "../components/block"
 import Tagline from "../components/tagline"
 import Feature from "../components/feature"
+import Card from "../components/card"
 import ComingSoon from "../components/comingSoon"
+import Footer from "../components/footer"
 
 const Header = styled.h4`
   margin: 20rem 0 -10rem;
@@ -22,6 +24,15 @@ const Features = styled.section`
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 10rem;
   background-color: #191919;
+  grid-column-gap: 5rem;
+`
+
+const Cards = styled.section`
+  margin: 25rem 0;
+  padding: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10rem;
   grid-column-gap: 5rem;
 `
 
@@ -82,7 +93,29 @@ const Commercial = () => (
         body="See trends only available when data is organized as it exists in the real world"
       ></Feature>
     </Features>
+    <Cards>
+      <Card heading="Search & Filtering">
+        Create any filter set to find the data you need, fast
+      </Card>
+      <Card heading="Compelling Visuals">
+        Capture powerful imagery for presentation and marketing
+      </Card>
+      <Card heading="SAAS Application">
+        Web-based application accessible anywhere with no install and automatic
+        updates
+      </Card>
+      <Card heading="Open Integration">
+        The 3DCRE Platform can integrate with virtually any property dataset
+      </Card>
+      <Card heading="Built-in Reporting">
+        One-click reporting, saved filter sets, and instant external links
+      </Card>
+      <Card heading="Scalability">
+        No matter how big or small your database, we scale with you
+      </Card>
+    </Cards>
     <ComingSoon />
+    <Footer />
   </Layout>
 )
 

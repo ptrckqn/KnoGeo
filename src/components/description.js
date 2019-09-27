@@ -20,6 +20,7 @@ const Header = styled.h4`
 const Paragraph = styled.p`
   font-size: 2rem;
   padding: 1.5rem 0;
+  color: #8f8f8f;
 `
 
 const Secondary = styled(Details)`
@@ -32,14 +33,14 @@ const Secondary = styled(Details)`
 `
 
 const CTA = styled(Link)`
-  color: #285aa0;
+  color: #0074b8;
   text-decoration: none;
   padding: 1.5rem 3rem;
-  border: 1px solid #285aa0;
+  border: 1px solid #0074b8;
   border-radius: 30px;
   transition: all 0.3s;
   &:hover {
-    background-color: #285aa0;
+    background-color: #0074b8;
     color: #efefef;
   }
 `

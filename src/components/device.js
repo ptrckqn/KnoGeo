@@ -33,6 +33,7 @@ const Header = styled.h4`
 const Paragraph = styled.p`
   font-size: 2rem;
   padding: 1.5rem 0;
+  color: #8f8f8f;
 `
 
 const Device = () => (

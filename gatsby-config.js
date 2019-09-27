@@ -20,10 +20,10 @@ module.exports = {
       options: {
         name: "KnoGeo",
         short_name: "KnoGeo",
-        icon: "static/favicon.png",
+        icon: "static/images/icon.png",
         start_url: "/",
         background_color: "#0D0A0B",
-        theme_color: "#0067ac",
+        theme_color: "#0074b8",
         display: "standalone",
       },
     },

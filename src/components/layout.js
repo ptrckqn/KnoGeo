@@ -7,11 +7,12 @@ import ScrollToTop from "./scrollToTop"
 /*
 Colour Pallette
 
-Main: #285AA0
+Main: #0074b8
 Accent: #ECA400
 Background: #202020
 Alt Background: #131418
 Text: #efefef
+Alt Text: #8f8f8f
 */
 
 const GlobalStyle = createGlobalStyle`

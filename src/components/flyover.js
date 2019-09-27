@@ -25,6 +25,7 @@ const Details = styled.div`
   top: 50%;
   transform: ${props => `translate(${props.translate}%, -50%)`};
   overflow: hidden;
+  color: #8f8f8f;
 `
 
 const Left = styled.div`
