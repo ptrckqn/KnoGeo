@@ -38,6 +38,12 @@ const NavLink = styled(Link)`
   text-transform: uppercase;
 `
 
+const ExternalLink = styled.a`
+  color: #efefef;
+  text-decoration: none;
+  text-transform: uppercase;
+`
+
 const Navbar = () => (
   <Nav>
     <BrandBox to="/">
@@ -51,7 +57,12 @@ const Navbar = () => (
         <NavLink to="/commercial">Commerical</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink to="/blog">Blog</NavLink>
+        <ExternalLink
+          href="https://medium.com/knogeo-3d-data-technologies"
+          target="__blank"
+        >
+          Blog
+        </ExternalLink>
       </NavItem>
       <NavItem>
         <NavLink to="/team">Team</NavLink>
