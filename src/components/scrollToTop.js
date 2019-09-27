@@ -42,8 +42,13 @@ const ScrollToTop = () => {
       setShow(10)
     }
   }
+
+  function handleClick() {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+  }
+
   return (
-    <Container show={show}>
+    <Container onClick={handleClick} show={show}>
       <Chevron>&#10095;</Chevron>
     </Container>
   )
