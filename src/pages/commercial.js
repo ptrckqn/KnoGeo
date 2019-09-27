@@ -6,6 +6,7 @@ import Heading from "../components/heading"
 import Block from "../components/block"
 import Tagline from "../components/tagline"
 import Feature from "../components/feature"
+import ComingSoon from "../components/comingSoon"
 
 const Header = styled.h4`
   margin: 20rem 0 -10rem;
@@ -81,6 +82,7 @@ const Commercial = () => (
         body="See trends only available when data is organized as it exists in the real world"
       ></Feature>
     </Features>
+    <ComingSoon />
   </Layout>
 )
 
