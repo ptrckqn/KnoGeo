@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
 const Container = styled.section`
@@ -43,9 +43,13 @@ const Right = styled.div`
 const Flyover = () => {
   const [leftTranslate, setLeftTranslate] = useState(0)
   const [rightTranslate, setRightTranslate] = useState(0)
-  const [prevPos, setPrevPos] = useState(window.pageYOffset)
-  const upperBoundary = window.innerHeight * 0.45
-  const lowerBoundary = window.innerHeight * 0.55
+  const [prevPos, setPrevPos] = useState()
+
+  useEffect(() => {
+    const upperBoundary = window.innerHeight * 0.45
+    const lowerBoundary = window.innerHeight * 0.55
+    setPrevPos(window.pageYOffset)
+  }, [])
 
   return (
     <Container>

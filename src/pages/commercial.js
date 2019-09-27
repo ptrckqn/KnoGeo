@@ -6,6 +6,7 @@ import Heading from "../components/heading"
 import Block from "../components/block"
 import Tagline from "../components/tagline"
 import Feature from "../components/feature"
+import Blueprint from "../components/svg/blueprint"
 import Card from "../components/card"
 import ComingSoon from "../components/comingSoon"
 import Footer from "../components/footer"
@@ -19,7 +20,7 @@ const Header = styled.h4`
 
 const Features = styled.section`
   margin: 25rem 0;
-  padding: 10rem;
+  padding: 0 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 10rem;
@@ -37,26 +38,26 @@ const Cards = styled.section`
 `
 
 const Commercial = () => (
-  <Layout title="KnoGeo - Residential">
+  <Layout title="KnoGeo - Commercial">
     <Heading
-      image="images/hero7.jpg"
+      image="/images/hero7.jpg"
       title="Visualization and analysis of property data: specifically made for big cities "
       primary="Analyze, explore, and present your data in 3D"
       cta="Contact us"
       center
     />
     <Header>About Us</Header>
-    <Block image="images/block1.jpg">
+    <Block image="/images/block1.jpg">
       3DCRE dynamically connects your market, property, and unit information
       into a cloud-based 3D platform that unlocks the value of your data.
     </Block>
-    <Block image="images/block2.jpg" mirror>
+    <Block image="/images/block2.jpg" mirror>
       KnoGeo is built for CRE offices, property managers, and urban planners in
       the most competitive real estate markets, where traditional data
       visualization and analysis techniques break down due to the density of
       properties and professionals need an innovative way to stay on top.
     </Block>
-    <Block image="images/block3.jpg">
+    <Block image="/images/block3.jpg">
       By combining location intelligence and property data in our patented
       platform, we offer simple integration with any dataset to take information
       stuck in spreadsheets and organize it as it exists in the real world,
@@ -79,7 +80,9 @@ const Commercial = () => (
       <Feature
         heading="2 Extra Layers of Data"
         body="3D enables both floor and unit level data analysis"
-      ></Feature>
+      >
+        <Blueprint />
+      </Feature>
       <Feature
         heading="Improve Client Communication"
         body="Showing data visually dramatically increases understanding and impact"

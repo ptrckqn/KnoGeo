@@ -11,12 +11,12 @@ const Container = styled.section`
 `
 
 const Laptop = styled.div`
-  background: url(images/laptop.png) center right/cover no-repeat;
+  background: url(/images/laptop.png) center right/cover no-repeat;
   height: 100%;
 `
 
 const Phone = styled.div`
-  background: url(images/phone.png) center left/contain no-repeat;
+  background: url(/images/phone.png) center left/contain no-repeat;
   height: 100%;
   transform: translateX(50%);
 `

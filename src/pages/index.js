@@ -25,7 +25,7 @@ const IndexPage = () => {
       <Container>
         <Landing />
       </Container>
-      <Skyline src="images/skyline.png" />
+      <Skyline src="/images/skyline.png" />
     </Layout>
   )
 }

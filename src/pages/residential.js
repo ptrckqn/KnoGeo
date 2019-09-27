@@ -7,13 +7,15 @@ import Device from "../components/device"
 import TwoDimensional from "../components/twoDimensional"
 import Flyover from "../components/flyover"
 import Feature from "../components/feature"
-import Building from "../components/building"
+import Building from "../components/svg/building"
+import VrGoggles from "../components/svg/vrGoggles"
+import Checkmark from "../components/svg/checkmark"
 import Description from "../components/description"
 import Footer from "../components/footer"
 
 const Features = styled.section`
   margin: -25rem 0 25rem;
-  padding: 10rem;
+  padding: 0 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background-color: #191919;
@@ -24,7 +26,7 @@ const ResidentialPage = () => {
   return (
     <Layout title="KnoGeo - Residential">
       <Heading
-        image="images/hero6.jpg"
+        image="/images/hero6.jpg"
         title="Location Marketing"
         primary="“Interactive, Photorealistic, 3D Showcases of Listings”"
         cta="Get Your Listing’s Showcase for just $25"
@@ -44,11 +46,15 @@ const ResidentialPage = () => {
         <Feature
           heading="Cross-Platform Functionality"
           body="Our 3D Showcases are designed to work on any phone or desktop (VR goggles too!) so you can include them in all marketing pieces"
-        ></Feature>
+        >
+          <VrGoggles />
+        </Feature>
         <Feature
           heading="Personalized Marketing"
           body="No one knows a listing better than you, and we give you the ability to highlight and notate everything great about a property"
-        ></Feature>
+        >
+          <Checkmark />
+        </Feature>
       </Features>
       <Description />
       <Footer />

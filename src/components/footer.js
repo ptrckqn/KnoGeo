@@ -80,7 +80,7 @@ const Footer = () => (
         <NavLink to="/team">Team</NavLink>
       </NavItem>
     </NavLinks>
-    <Image src="images/icon.png" />
+    <Image src="/images/icon.png" />
     <MadeBy href="http://www.github.com/ptrckqn" target="__blank">
       Made by Patrick Quan
     </MadeBy>
