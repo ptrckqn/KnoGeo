@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const Container = styled.section`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 2fr;
   max-width: 100rem;
   margin: 25rem auto;
 `
@@ -13,6 +13,7 @@ const Details = styled.div`
   padding: 5rem 3rem;
   border-radius: 10px;
   background-color: #191919;
+  text-align: center;
 `
 
 const Header = styled.h4`
@@ -29,7 +30,7 @@ const Secondary = styled(Details)`
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 `
 

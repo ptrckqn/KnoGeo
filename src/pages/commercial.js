@@ -6,7 +6,12 @@ import Heading from "../components/heading"
 import Block from "../components/block"
 import Tagline from "../components/tagline"
 import Feature from "../components/feature"
-import Blueprint from "../components/svg/blueprint"
+import Radar from "../components/svg/radar"
+import Map from "../components/svg/map"
+import Layers from "../components/svg/layers"
+import Chat from "../components/svg/chat"
+import Graph from "../components/svg/graph"
+import Building from "../components/svg/building"
 import Card from "../components/card"
 import ComingSoon from "../components/comingSoon"
 import Footer from "../components/footer"
@@ -29,7 +34,7 @@ const Features = styled.section`
 `
 
 const Cards = styled.section`
-  margin: 25rem 0;
+  margin: 20rem 0;
   padding: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -72,30 +77,41 @@ const Commercial = () => (
       <Feature
         heading="Better Analysis"
         body="20x data coverage vs. traditional 2D spatial mapping "
-      ></Feature>
+      >
+        <Radar />
+      </Feature>
       <Feature
         heading="Virtual Site Selections"
         body="Lead realistic online site selection and exploration sessions"
-      ></Feature>
+      >
+        <Map />
+      </Feature>
       <Feature
         heading="2 Extra Layers of Data"
         body="3D enables both floor and unit level data analysis"
       >
-        <Blueprint />
+        <Layers />
       </Feature>
       <Feature
         heading="Improve Client Communication"
         body="Showing data visually dramatically increases understanding and impact"
-      ></Feature>
+      >
+        <Chat />
+      </Feature>
       <Feature
         heading="Clear Marketing & Reporting"
         body="Improve internal and external presentations with instant visuals of the market"
-      ></Feature>
+      >
+        <Building />
+      </Feature>
       <Feature
         heading="Unique Insights"
         body="See trends only available when data is organized as it exists in the real world"
-      ></Feature>
+      >
+        <Graph />
+      </Feature>
     </Features>
+    <Header>Features</Header>
     <Cards>
       <Card heading="Search & Filtering">
         Create any filter set to find the data you need, fast

@@ -7,8 +7,8 @@ import Device from "../components/device"
 import TwoDimensional from "../components/twoDimensional"
 import Flyover from "../components/flyover"
 import Feature from "../components/feature"
-import Building from "../components/svg/building"
-import VrGoggles from "../components/svg/vrGoggles"
+import Search from "../components/svg/search"
+import Devices from "../components/svg/devices"
 import Checkmark from "../components/svg/checkmark"
 import Description from "../components/description"
 import Footer from "../components/footer"
@@ -41,13 +41,13 @@ const ResidentialPage = () => {
           heading="Dynamic"
           body="We already have all of Manhattan modelled in 3D, so getting a Showcase is as easy as typing in the address"
         >
-          <Building />
+          <Search />
         </Feature>
         <Feature
           heading="Cross-Platform Functionality"
           body="Our 3D Showcases are designed to work on any phone or desktop (VR goggles too!) so you can include them in all marketing pieces"
         >
-          <VrGoggles />
+          <Devices />
         </Feature>
         <Feature
           heading="Personalized Marketing"
