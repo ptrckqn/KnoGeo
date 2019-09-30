@@ -32,6 +32,7 @@ const ResidentialPage = () => {
         cta="Get Your Listing’s Showcase for just $25"
         secondary="Every Listing in Manhattan is now live,
         check one out"
+        center
       />
       <Device />
       <TwoDimensional />
