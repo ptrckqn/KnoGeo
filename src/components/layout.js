@@ -1,5 +1,5 @@
 import React from "react"
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 import SEO from "./seo"
 import Navbar from "./navbar"
@@ -49,14 +49,18 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 
+const Container = styled.div`
+  position: relative;
+`
+
 const Layout = ({ title, children }) => (
-  <>
+  <Container>
     <GlobalStyle />
     <SEO title={title} />
     <Navbar />
     <ScrollToTop />
     {children}
-  </>
+  </Container>
 )
 
 export default Layout
