@@ -6,7 +6,7 @@ const Container = styled.section`
   display: grid;
   grid-template-columns: 2fr 1fr;
   max-width: 100rem;
-  margin: 50rem auto 25rem;
+  margin: 25rem auto 25rem;
   padding: 3rem;
   @media only screen and (max-width: 46.25em) {
     grid-template-columns: 1fr;

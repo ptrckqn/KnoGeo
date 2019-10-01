@@ -14,7 +14,7 @@ import Description from "../components/description"
 import Footer from "../components/footer"
 
 const Features = styled.section`
-  margin: -25rem 0 25rem;
+  margin: -50rem 0 25rem;
   padding: 0 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.section`
-  margin: 50rem 0;
+  margin: 25rem 0;
   background: url(/images/2dmap.png) center center/cover no-repeat;
   height: 75rem;
   display: flex;
