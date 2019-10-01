@@ -13,7 +13,7 @@ const Container = styled.section`
 
 const Details = styled.div`
   width: 40%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 5rem 3rem;
   border-radius: 10px;
 `

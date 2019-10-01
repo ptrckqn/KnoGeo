@@ -13,8 +13,15 @@ import Checkmark from "../components/svg/checkmark"
 import Description from "../components/description"
 import Footer from "../components/footer"
 
+const Header = styled.h4`
+  margin: 20rem 0 -10rem;
+  font-size: 5rem;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+`
+
 const Features = styled.section`
-  margin: -50rem 0 25rem;
+  margin: 10rem 0;
   padding: 0 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -43,7 +50,7 @@ const ResidentialPage = () => {
       />
       <Device />
       <TwoDimensional />
-      <Flyover />
+      <Header>Features</Header>
       <Features>
         <Feature
           heading="Dynamic"
@@ -64,6 +71,8 @@ const ResidentialPage = () => {
           <Checkmark />
         </Feature>
       </Features>
+      <Header>Coming Soon: Flights</Header>
+      <Flyover />
       <Description />
       <Footer />
     </Layout>

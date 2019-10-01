@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Svg = styled.svg`
-  width: 50%;
+  width: 30%;
   margin: 2rem auto;
   fill: #0074b8;
 `
