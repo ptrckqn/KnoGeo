@@ -20,6 +20,13 @@ const Features = styled.section`
   grid-template-columns: repeat(3, 1fr);
   background-color: #191919;
   grid-column-gap: 5rem;
+  @media only screen and (max-width: 56.25em) {
+    grid-template-columns: 1fr;
+    padding: 0 15rem;
+  }
+  @media only screen and (max-width: 41em) {
+    padding: 0 3rem;
+  }
 `
 
 const ResidentialPage = () => {

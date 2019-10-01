@@ -7,6 +7,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 5rem;
+  @media only screen and (max-width: 41em) {
+    padding: 5rem 0.5rem;
+  }
 `
 
 const Details = styled.span`

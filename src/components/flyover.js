@@ -8,6 +8,12 @@ const Container = styled.section`
   grid-template-columns: 1fr 55% 1fr;
   grid-template-rows: 75vh 100vh 75vh 100vh;
   justify-items: center;
+  @media only screen and (max-width: 56.25em) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: auto;
+    margin: 100rem 0 25rem;
+  }
 `
 
 const Video = styled.video`
@@ -16,6 +22,11 @@ const Video = styled.video`
   top: 50%;
   transform: translateY(-50%);
   grid-column: 2 / 3;
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    position: static;
+  }
 `
 
 const Details = styled.div`
@@ -26,18 +37,29 @@ const Details = styled.div`
   transform: ${props => `translate(${props.translate}%, -50%)`};
   overflow: hidden;
   color: #8f8f8f;
+  @media only screen and (max-width: 56.25em) {
+    position: static;
+  }
 `
 
 const Left = styled.div`
   height: 100%;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
 `
 
 const Right = styled.div`
   height: 100%;
   grid-column: 3 / 4;
   grid-row: 4 / 5;
+  @media only screen and (max-width: 56.25em) {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
 `
 
 const Flyover = () => {

@@ -28,6 +28,9 @@ const NavLinks = styled.ul`
   justify-content: space-around;
   width: 50%;
   align-items: center;
+  @media only screen and (max-width: 41em) {
+    width: 100%;
+  }
 `
 
 const NavItem = styled.li``

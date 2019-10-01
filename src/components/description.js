@@ -7,10 +7,21 @@ const Container = styled.section`
   grid-template-columns: 2fr 1fr;
   max-width: 100rem;
   margin: 50rem auto 25rem;
+  padding: 3rem;
+  @media only screen and (max-width: 46.25em) {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  @media only screen and (max-width: 41em) {
+    margin: 25rem auto;
+  }
 `
 
 const Details = styled.div`
   padding: 5rem 3rem;
+  @media only screen and (max-width: 41em) {
+    padding: 5rem 1.5rem;
+  }
 `
 
 const Header = styled.h4`
@@ -21,6 +32,9 @@ const Paragraph = styled.p`
   font-size: 2rem;
   padding: 1.5rem 0;
   color: #8f8f8f;
+  @media only screen and (max-width: 41em) {
+    padding: 0;
+  }
 `
 
 const Secondary = styled(Details)`
@@ -30,6 +44,13 @@ const Secondary = styled(Details)`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width: 46.25em) {
+    width: 50rem;
+    justify-self: center;
+  }
+  @media only screen and (max-width: 41em) {
+    width: auto;
+  }
 `
 
 const CTA = styled(Link)`

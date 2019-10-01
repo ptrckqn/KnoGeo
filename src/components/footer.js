@@ -10,6 +10,10 @@ const Container = styled.footer`
   display: flex;
   justify-content: space-between;
   position: relative;
+  @media only screen and (max-width: 46.25em) {
+    flex-direction: column;
+    height: 20rem;
+  }
 `
 
 const NavLinks = styled.ul`
@@ -18,6 +22,14 @@ const NavLinks = styled.ul`
   grid-template-columns: repeat(4, min-content);
   grid-column-gap: 3rem;
   align-items: center;
+  @media only screen and (max-width: 46.25em) {
+    align-self: center;
+  }
+  @media only screen and (max-width: 41em) {
+    grid-template-columns: repeat(2, min-content);
+    grid-row-gap: 1.5rem;
+    justify-items: center;
+  }
 `
 
 const NavItem = styled.li``
@@ -53,11 +65,17 @@ const MadeBy = styled.a`
   &:hover {
     color: #efefef;
   }
+  @media only screen and (max-width: 46.25em) {
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 `
 
 const Image = styled.img`
   object-fit: contain;
   height: 100%;
+  padding-bottom: 5rem;
 `
 const Footer = () => (
   <Container>

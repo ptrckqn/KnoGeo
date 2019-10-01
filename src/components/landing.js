@@ -49,6 +49,10 @@ const Header = styled.span`
   top: 40%;
   left: 35%;
   transform: translate(-50%, -50%);
+  @media only screen and (max-width: 41em) {
+    left: 50%;
+    width: 90%;
+  }
 `
 
 const Primary = styled.h2`
@@ -84,6 +88,9 @@ const Navigation = styled.div`
   bottom: 20%;
   transform: translateX(-50%);
   width: 100%;
+  @media only screen and (max-width: 41em) {
+    flex-direction: column;
+  }
 `
 
 const Landing = () => (
