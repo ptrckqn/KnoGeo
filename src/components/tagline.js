@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.span`
-  margin: 25rem 0 50rem;
+  margin: 10rem 0 25rem;
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 6rem;

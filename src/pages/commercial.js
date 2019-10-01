@@ -37,7 +37,7 @@ const Features = styled.section`
 `
 
 const Cards = styled.section`
-  margin: 20rem 0;
+  margin: 10rem 0;
   padding: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -74,6 +74,10 @@ const Commercial = () => (
         presentation, and understanding.
       </Paragraph>
     </Block>
+    <Tagline>
+      Making Data <span>Make Sense.</span>
+    </Tagline>
+    <Header>About 3DCRE</Header>
     <Block image="/images/block2.jpg" mirror>
       <Paragraph>
         3DCRE dynamically connects market, property, and unit information into a
@@ -93,6 +97,10 @@ const Commercial = () => (
         presentation, and understanding.
       </Paragraph>
     </Block>
+    <Tagline>
+      Making Data <span>Make Sense.</span>
+    </Tagline>
+    <Header>About 3DCRE</Header>
     <Block image="/images/block3.jpg">
       <Paragraph>
         3DCRE dynamically connects market, property, and unit information into a

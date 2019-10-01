@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Container = styled.section`
   height: 50rem;
-  margin: 25rem auto;
+  margin: 10rem auto;
   display: flex;
   justify-content: space-between;
   flex-direction: ${props => (props.mirror ? "row-reverse" : "row")};
