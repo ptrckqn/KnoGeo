@@ -27,14 +27,14 @@ const Team = () => (
         <PersonCard
           name="Chingiz Bakhishov"
           title="Software Developer"
-          image="/images/team2.jpg"
+          image="/images/chingiz.jpg"
         >
           Chingiz is an engineering graduate who combines geomatics and software
           expertise to power the core Hylyte platform. He previously co-founded
           a specialty delivery & logistics services company for connecting users
           with real-time local goods
         </PersonCard>
-        <PersonCard name="Jesse Brown" title="CEO" image="/images/team1.jpg">
+        <PersonCard name="Jesse Brown" title="CEO" image="/images/jesse.jpg">
           An honour’s finance graduate, Jesse’s grew up in a 4th generation real
           estate family and his work experience includes founding and growing
           two startups in the mobile and fintec spaces, as well as time spent in
@@ -44,7 +44,7 @@ const Team = () => (
         <PersonCard
           name="Jordan Selanders"
           title="Software Developer"
-          image="/images/team3.jpg"
+          image="/images/jordan.jpg"
         >
           Jordan has been programming since he was 10 years old, and brings a
           background across game development, 3D animation, and web
