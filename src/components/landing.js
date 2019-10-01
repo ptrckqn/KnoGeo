@@ -37,6 +37,15 @@ const moveInRight = keyframes`
     }
 `
 
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  align-items: center;
+
+  height: 100%;
+  padding: 10rem;
+`
+
 const NavLink = styled(Link)`
   color: #efefef;
   text-decoration: none;
@@ -44,11 +53,6 @@ const NavLink = styled(Link)`
 `
 
 const Header = styled.span`
-  position: absolute;
-  width: 55%;
-  top: 40%;
-  left: 35%;
-  transform: translate(-50%, -50%);
   @media only screen and (max-width: 41em) {
     left: 50%;
     width: 90%;
@@ -61,6 +65,7 @@ const Primary = styled.h2`
   font-size: 4rem;
   line-height: 1.2;
   animation: ${moveInLeft} 1s ease-out;
+  margin-bottom: 3rem;
 `
 
 const Secondary = styled.h3`
@@ -78,26 +83,29 @@ const ButtonText = styled.span`
   text-transform: capitalize;
 `
 
-const Navigation = styled.div`
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  bottom: 20%;
-  transform: translateX(-50%);
-  width: 100%;
-  @media only screen and (max-width: 41em) {
-    flex-direction: column;
+const Navigation = styled.div``
+
+const CTA = styled(Link)`
+  display: block;
+  color: #efefef;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border: 1px solid #efefef;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin: 5rem 2rem;
+  &:hover {
+    background-color: #efefef;
+    color: #202020;
   }
 `
 
 const Landing = () => (
-  <>
+  <Container>
     <Header>
       <Primary>
-        Patented Platform for Visualizing Real Estate Data in 3D
+        KnoGeo’s Patented Platform for Visualizing Real Estate Data in 3D
       </Primary>
       <Secondary>
         Powering commercial and residential real estate offices and agents to
@@ -105,18 +113,10 @@ const Landing = () => (
       </Secondary>
     </Header>
     <Navigation>
-      <ArrowButtonLeft>
-        <NavLink to="/residential">
-          <ButtonText>Explore KnoGeo Residential</ButtonText>
-        </NavLink>
-      </ArrowButtonLeft>
-      <ArrowButtonRight>
-        <NavLink to="/commercial">
-          <ButtonText>Explore KnoGeo Commercial</ButtonText>
-        </NavLink>
-      </ArrowButtonRight>
+      <CTA to="/residential">Explore KnoGeo Residential</CTA>
+      <CTA to="/commercial">Exlpore KnoGeo Commerical</CTA>
     </Navigation>
-  </>
+  </Container>
 )
 
 export default Landing

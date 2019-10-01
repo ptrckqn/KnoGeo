@@ -34,7 +34,12 @@ const Team = () => (
           a specialty delivery & logistics services company for connecting users
           with real-time local goods
         </PersonCard>
-        <PersonCard name="Jesse Brown" title="CEO" image="/images/jesse.jpg">
+        <PersonCard
+          name="Jesse Brown"
+          title="CEO"
+          email="jesse@knogeo.com"
+          image="/images/jesse.jpg"
+        >
           An honour’s finance graduate, Jesse’s grew up in a 4th generation real
           estate family and his work experience includes founding and growing
           two startups in the mobile and fintec spaces, as well as time spent in
