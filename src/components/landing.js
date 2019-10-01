@@ -54,7 +54,8 @@ const Container = styled.div`
   }
   @media only screen and (max-width: 41em) {
     padding: 3rem;
-    top: 40%;
+    top: 50%;
+    align-content: center;
   }
 `
 
@@ -75,7 +76,7 @@ const Header = styled.span`
 const Primary = styled.h2`
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1.2;
   animation: ${moveInLeft} 1s ease-out;
   margin-bottom: 3rem;
@@ -102,7 +103,7 @@ const CTA = styled(Link)`
   text-decoration: none;
   padding: 1.5rem 3rem;
   border: 1px solid #efefef;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   border-radius: 50px;
   transition: all 0.3s;
   margin: 5rem 2rem;
