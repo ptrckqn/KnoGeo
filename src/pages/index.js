@@ -9,6 +9,9 @@ const Container = styled.section`
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(/images/hero4.jpg) center left/cover no-repeat;
+  @media only screen and (max-width: 56.25em) {
+    background-position: center;
+  }
 `
 
 const Skyline = styled.img`
@@ -17,6 +20,9 @@ const Skyline = styled.img`
   left: 50%;
   transform: translate(-50%);
   width: 30rem;
+  @media only screen and (max-width: 41em) {
+    width: 15rem;
+  }
 `
 
 const IndexPage = () => {

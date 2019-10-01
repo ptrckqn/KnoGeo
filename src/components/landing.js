@@ -39,11 +39,23 @@ const moveInRight = keyframes`
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 1.55fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
-
-  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  width: 100%;
   padding: 10rem;
+  @media only screen and (max-width: 56.25em) {
+    padding: 5rem;
+  }
+  @media only screen and (max-width: 41em) {
+    padding: 3rem;
+    top: 40%;
+  }
 `
 
 const NavLink = styled(Link)`
@@ -53,9 +65,10 @@ const NavLink = styled(Link)`
 `
 
 const Header = styled.span`
+  grid-column: 1 / -1;
+  width: 70%;
   @media only screen and (max-width: 41em) {
-    left: 50%;
-    width: 90%;
+    width: 100%;
   }
 `
 
@@ -66,6 +79,9 @@ const Primary = styled.h2`
   line-height: 1.2;
   animation: ${moveInLeft} 1s ease-out;
   margin-bottom: 3rem;
+  @media only screen and (max-width: 41em) {
+    font-size: 2.6rem;
+  }
 `
 
 const Secondary = styled.h3`
@@ -74,30 +90,34 @@ const Secondary = styled.h3`
   font-size: 2.7rem;
   line-height: 1.3;
   animation: ${moveInRight} 1s ease-out;
+  @media only screen and (max-width: 41em) {
+    font-size: 1.8rem;
+  }
 `
-
-const ButtonText = styled.span`
-  margin: 0 1.6rem;
-  font-size: 2.5rem;
-  transition: transform 0.2s;
-  text-transform: capitalize;
-`
-
-const Navigation = styled.div``
 
 const CTA = styled(Link)`
-  display: block;
+  justify-self: center;
+  text-align: center;
   color: #efefef;
   text-decoration: none;
   padding: 1.5rem 3rem;
   border: 1px solid #efefef;
   font-size: 2.5rem;
-  border-radius: 10px;
+  border-radius: 50px;
   transition: all 0.3s;
   margin: 5rem 2rem;
   &:hover {
     background-color: #efefef;
     color: #202020;
+  }
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.6rem;
+  }
+  @media only screen and (max-width: 41em) {
+    padding: 1rem 2rem;
+    grid-column: 1 / -1;
+    font-size: 1.4rem;
+    margin: 2rem 0;
   }
 `
 
@@ -112,10 +132,8 @@ const Landing = () => (
         better analysis, presentation, and understanding
       </Secondary>
     </Header>
-    <Navigation>
-      <CTA to="/residential">Explore KnoGeo Residential</CTA>
-      <CTA to="/commercial">Exlpore KnoGeo Commerical</CTA>
-    </Navigation>
+    <CTA to="/residential">Explore KnoGeo Residential</CTA>
+    <CTA to="/commercial">Exlpore KnoGeo Commerical</CTA>
   </Container>
 )
 
