@@ -12,6 +12,12 @@ const Container = styled.span`
   span {
     color: #0074b8;
   }
+  @media only screen and(max-width: 56.25em) {
+    font-size: 5rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 4rem;
+  }
 `
 
 const Tagline = ({ children }) => <Container>{children}</Container>

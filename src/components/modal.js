@@ -13,6 +13,11 @@ const Container = styled.div`
   border-radius: 10px;
   padding: 5rem;
   visibility: ${props => (props.open ? "visible" : "hidden")};
+  @media only screen and (max-width: 41em) {
+    width: 90%;
+    padding: 1.5rem;
+    padding-top: 10rem;
+  }
 `
 
 const CloseBtn = styled.span`
@@ -54,18 +59,30 @@ const Form = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 `
 
 const InputWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  @media only screen and (max-width: 41em) {
+    grid-template-columns: 1fr;
+    margin: 1.5rem 0;
+    width: 100%;
+  }
 `
 
 const Label = styled.label`
   color: #efefef;
   margin-right: 10rem;
   font-size: 1.8rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  @media only screen and(max-width: 41em) {
+    font-size: 1.6rem;
+  }
 `
 
 const Input = styled.input`
@@ -78,13 +95,21 @@ const Input = styled.input`
   padding: 1.5rem;
   transition: border 0.3s;
   width: 30rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   &:focus {
     outline: none;
     border: 1px solid #0074b8;
   }
+  @media only screen and (max-width: 41em) {
+    width: 100%;
+    font-size: 1.6rem;
+  }
 `
 
 const TextInput = styled.textarea`
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
   height: 25rem;
   width: 100%;
   overflow: scroll;
@@ -101,6 +126,10 @@ const TextInput = styled.textarea`
     outline: none;
     border: 1px solid #0074b8;
   }
+  @media only screen and (max-width: 41em) {
+    width: 100%;
+    font-size: 1.6rem;
+  }
 `
 
 const Submit = styled.button`
@@ -116,6 +145,9 @@ const Submit = styled.button`
   &:hover {
     background-color: #0074b8;
     color: #efefef;
+  }
+  @media only screen and(max-width: 41em) {
+    font-size: 1.6rem;
   }
 `
 
