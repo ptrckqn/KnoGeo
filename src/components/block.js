@@ -2,11 +2,14 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.section`
-  height: 50rem;
   margin: 10rem auto;
   display: flex;
   justify-content: space-between;
   flex-direction: ${props => (props.mirror ? "row-reverse" : "row")};
+  @media only screen and (max-width: 41em) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const Details = styled.span`
@@ -15,6 +18,9 @@ const Details = styled.span`
   width: 100%;
   padding: 3rem;
   align-self: center;
+  @media only screen and (max-width: 56.25em) {
+    margin: 0 1.5rem;
+  }
 `
 
 const Header = styled.h4`
@@ -25,6 +31,12 @@ const Paragraph = styled.p`
   font-size: 2rem;
   padding: 1.5rem 0;
   color: #8f8f8f;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 1.6rem;
+  }
 `
 
 const Image = styled.img`
@@ -32,6 +44,9 @@ const Image = styled.img`
   margin: 0 5rem;
   width: 30%;
   object-fit: contain;
+  @media only screen and (max-width: 41em) {
+    width: 80%;
+  }
 `
 
 const Block = ({ heading, children, image, mirror }) => (

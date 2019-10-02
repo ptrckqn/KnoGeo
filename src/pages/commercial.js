@@ -19,10 +19,16 @@ import Footer from "../components/footer"
 import Modal from "../components/modal"
 
 const Header = styled.h4`
-  margin: 20rem 0 -10rem;
+  margin: 20rem 0 0;
   font-size: 5rem;
   font-family: "Playfair Display", serif;
   text-align: center;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 4.5rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 4rem;
+  }
 `
 
 const Features = styled.section`
