@@ -12,6 +12,7 @@ const Container = styled.footer`
   position: relative;
   @media only screen and (max-width: 46.25em) {
     flex-direction: column;
+    justify-content: space-around;
     height: 20rem;
   }
 `
@@ -32,7 +33,9 @@ const NavLinks = styled.ul`
   }
 `
 
-const NavItem = styled.li``
+const NavItem = styled.li`
+  font-size: 1.5rem;
+`
 
 const NavLink = styled(Link)`
   color: #8f8f8f;
@@ -62,6 +65,7 @@ const MadeBy = styled.a`
   left: 10rem;
   text-decoration: none;
   transition: all 0.2s;
+  font-size: 1.5rem;
   &:hover {
     color: #efefef;
   }
@@ -75,7 +79,9 @@ const MadeBy = styled.a`
 const Image = styled.img`
   object-fit: contain;
   height: 100%;
-  padding-bottom: 5rem;
+  @media only screen and (max-width: 46.25em) {
+    height: 50%;
+  }
 `
 const Footer = () => (
   <Container>
