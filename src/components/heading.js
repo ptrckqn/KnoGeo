@@ -33,6 +33,10 @@ const Section = styled.div`
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
+  @media only screen and (max-width: 41em) {
+    width: 90%;
+    bottom: 0;
+  }
 `
 
 const Title = styled.h1`
@@ -41,6 +45,12 @@ const Title = styled.h1`
   font-size: 8rem;
   line-height: 1.2;
   margin-bottom: 3rem;
+  @media only screen and (max-width: 46.25em) {
+    font-size: 6rem;
+  }
+  @media only screen and (max-width: 30em) {
+    font-size: 4rem;
+  }
 `
 
 const Primary = styled.h2`
@@ -48,9 +58,16 @@ const Primary = styled.h2`
   font-weight: 700;
   font-size: 4rem;
   line-height: 1.2;
+  @media only screen and (max-width: 46.25em) {
+    font-size: 3rem;
+  }
+  @media only screen and (max-width: 30em) {
+    font-size: 2.5rem;
+  }
 `
 
 const CTA = styled.span`
+  text-align: center;
   cursor: pointer;
   background: transparent;
   font-size: 2rem;
@@ -64,6 +81,12 @@ const CTA = styled.span`
     background-color: #efefef;
     color: #202020;
   }
+  @media only screen and (max-width: 46.25em) {
+    font-size: 1.6rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 1.4rem;
+  }
 `
 
 const Secondary = styled.h3`
@@ -73,6 +96,12 @@ const Secondary = styled.h3`
   font-size: 2.7rem;
   line-height: 1.3;
   font-style: oblique;
+  @media only screen and (max-width: 46.25em) {
+    font-size: 1.6rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 1.4rem;
+  }
 `
 const Heading = ({
   setOpen,
