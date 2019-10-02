@@ -8,32 +8,63 @@ const Container = styled.section`
   grid-template-rows: repeat(2, 90vh);
   grid-row-gap: 50vh;
   overflow: hidden;
+  @media only screen and (max-width: 46.25em) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 0;
+    grid-template-rows: max-content 50vh max-content 50vh;
+  }
 `
 
 const Laptop = styled.div`
   background: url(/images/laptop.png) center right/cover no-repeat;
   height: 100%;
+  @media only screen and (max-width: 46.25em) {
+    background-position: center;
+    background-size: contain;
+    grid-row: 2 / 3;
+    margin: 0 1.5rem;
+  }
 `
 
 const Phone = styled.div`
   background: url(/images/phone.png) center left/contain no-repeat;
   height: 100%;
   transform: translateX(50%);
+  @media only screen and (max-width: 46.25em) {
+    background-position: center;
+    background-size: contain;
+    transform: translate(0);
+  }
 `
 
 const Details = styled.span`
   padding: 5rem 3rem;
   align-self: center;
+  @media only screen and (max-width: 41em) {
+    padding: 3rem 1.5rem;
+  }
 `
 
 const Header = styled.h4`
   font-size: 5rem;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 4rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 3rem;
+  }
 `
 
 const Paragraph = styled.p`
   font-size: 2rem;
   padding: 1.5rem 0;
   color: #8f8f8f;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.6rem;
+  }
 `
 
 const Device = () => (
