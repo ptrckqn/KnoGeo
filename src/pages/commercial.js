@@ -16,16 +16,13 @@ import Card from "../components/card"
 import Boxed from "../components/boxed"
 import ComingSoon from "../components/comingSoon"
 import Footer from "../components/footer"
+import Modal from "../components/modal"
 
 const Header = styled.h4`
   margin: 20rem 0 -10rem;
   font-size: 5rem;
   font-family: "Playfair Display", serif;
   text-align: center;
-`
-
-const Paragraph = styled.p`
-  margin: 3rem 0;
 `
 
 const Features = styled.section`
@@ -46,6 +43,11 @@ const Cards = styled.section`
   grid-column-gap: 5rem;
 `
 
+const Break = styled.span`
+  display: block;
+  height: 3rem;
+`
+
 const Commercial = () => (
   <Layout title="KnoGeo - Commercial">
     <Heading
@@ -57,69 +59,57 @@ const Commercial = () => (
     />
     <Header>About 3DCRE</Header>
     <Block image="/images/block1.jpg">
-      <Paragraph>
-        3DCRE dynamically connects market, property, and unit information into a
-        cloud-based 3D platform that unlocks the value of your data.
-      </Paragraph>
-      <Paragraph>
-        Our plateform is built for CRE offices, property managers, and urban
-        planners in the most competitive real estate markets, where traditional
-        data visualization and analysis techniques break down due to the density
-        of properties and professionals need an innovative way to stay on top.
-      </Paragraph>
-      <Paragraph>
-        By combining location intelligence and property data in our patented
-        platform, we offer simple integration with any dataset to take
-        information stuck in spreadsheets and organize it as it exists in the
-        real world, driving value for our customers through better analysis,
-        presentation, and understanding.
-      </Paragraph>
+      3DCRE dynamically connects market, property, and unit information into a
+      cloud-based 3D platform that unlocks the value of your data.
+      <Break />
+      Our plateform is built for CRE offices, property managers, and urban
+      planners in the most competitive real estate markets, where traditional
+      data visualization and analysis techniques break down due to the density
+      of properties and professionals need an innovative way to stay on top.
+      <Break />
+      By combining location intelligence and property data in our patented
+      platform, we offer simple integration with any dataset to take information
+      stuck in spreadsheets and organize it as it exists in the real world,
+      driving value for our customers through better analysis, presentation, and
+      understanding.
     </Block>
     <Tagline>
       Making Data <span>Make Sense.</span>
     </Tagline>
     <Header>About 3DCRE</Header>
     <Block image="/images/block2.jpg" mirror>
-      <Paragraph>
-        3DCRE dynamically connects market, property, and unit information into a
-        cloud-based 3D platform that unlocks the value of your data.
-      </Paragraph>
-      <Paragraph>
-        Our plateform is built for CRE offices, property managers, and urban
-        planners in the most competitive real estate markets, where traditional
-        data visualization and analysis techniques break down due to the density
-        of properties and professionals need an innovative way to stay on top.
-      </Paragraph>
-      <Paragraph>
-        By combining location intelligence and property data in our patented
-        platform, we offer simple integration with any dataset to take
-        information stuck in spreadsheets and organize it as it exists in the
-        real world, driving value for our customers through better analysis,
-        presentation, and understanding.
-      </Paragraph>
+      3DCRE dynamically connects market, property, and unit information into a
+      cloud-based 3D platform that unlocks the value of your data.
+      <Break />
+      Our plateform is built for CRE offices, property managers, and urban
+      planners in the most competitive real estate markets, where traditional
+      data visualization and analysis techniques break down due to the density
+      of properties and professionals need an innovative way to stay on top.
+      <Break />
+      By combining location intelligence and property data in our patented
+      platform, we offer simple integration with any dataset to take information
+      stuck in spreadsheets and organize it as it exists in the real world,
+      driving value for our customers through better analysis, presentation, and
+      understanding.
     </Block>
     <Tagline>
       Making Data <span>Make Sense.</span>
     </Tagline>
     <Header>About 3DCRE</Header>
     <Block image="/images/block3.jpg">
-      <Paragraph>
-        3DCRE dynamically connects market, property, and unit information into a
-        cloud-based 3D platform that unlocks the value of your data.
-      </Paragraph>
-      <Paragraph>
-        Our plateform is built for CRE offices, property managers, and urban
-        planners in the most competitive real estate markets, where traditional
-        data visualization and analysis techniques break down due to the density
-        of properties and professionals need an innovative way to stay on top.
-      </Paragraph>
-      <Paragraph>
-        By combining location intelligence and property data in our patented
-        platform, we offer simple integration with any dataset to take
-        information stuck in spreadsheets and organize it as it exists in the
-        real world, driving value for our customers through better analysis,
-        presentation, and understanding.
-      </Paragraph>
+      3DCRE dynamically connects market, property, and unit information into a
+      cloud-based 3D platform that unlocks the value of your data.
+      <Break />
+      Our plateform is built for CRE offices, property managers, and urban
+      planners in the most competitive real estate markets, where traditional
+      data visualization and analysis techniques break down due to the density
+      of properties and professionals need an innovative way to stay on top.
+      <Break />
+      By combining location intelligence and property data in our patented
+      platform, we offer simple integration with any dataset to take information
+      stuck in spreadsheets and organize it as it exists in the real world,
+      driving value for our customers through better analysis, presentation, and
+      understanding.
     </Block>
     <Tagline>
       Making Data <span>Make Sense.</span>
@@ -193,6 +183,11 @@ const Commercial = () => (
     </Boxed>
     <ComingSoon />
     <Footer />
+    <Modal
+      title="Contact us today for a demo"
+      textPlaceholder="Any other questions or details for us?"
+      full
+    />
   </Layout>
 )
 

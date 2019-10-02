@@ -12,6 +12,7 @@ import Devices from "../components/svg/devices"
 import Checkmark from "../components/svg/checkmark"
 import Description from "../components/description"
 import Footer from "../components/footer"
+import Modal from "../components/modal"
 
 const Header = styled.h4`
   margin: 15rem 0;
@@ -75,6 +76,10 @@ const ResidentialPage = () => {
       <Flyover />
       <Description />
       <Footer />
+      <Modal
+        title="Get your showcase"
+        textPlaceholder="How can we help? (if there is a specific listing you would like a Showcase for, you can tell us the address or ID here)"
+      />
     </Layout>
   )
 }

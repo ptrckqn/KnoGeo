@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 const Container = styled.div`
   margin: 15rem auto;
@@ -15,7 +14,7 @@ const Container = styled.div`
   align-items: center;
 `
 
-const CTA = styled(Link)`
+const CTA = styled.button`
   font-size: 1.6rem;
   margin-top: 5rem;
   color: #0074b8;
