@@ -25,6 +25,12 @@ const Header = styled.h4`
 const Paragraph = styled.p`
   font-size: 2rem;
   color: #8f8f8f;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 1.6rem;
+  }
 `
 
 const Card = ({ heading, children }) => (

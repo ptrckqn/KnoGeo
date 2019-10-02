@@ -38,6 +38,13 @@ const Features = styled.section`
   grid-template-columns: repeat(3, 1fr);
   background-color: #191919;
   grid-column-gap: 5rem;
+  @media only screen and (max-width: 56.25em) {
+    grid-template-columns: 1fr;
+    padding: 0 15rem;
+  }
+  @media only screen and (max-width: 41em) {
+    padding: 0 3rem;
+  }
 `
 
 const Cards = styled.section`
@@ -47,6 +54,10 @@ const Cards = styled.section`
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 5rem;
   grid-column-gap: 5rem;
+  @media only screen and (max-width: 41em) {
+    grid-template-columns: 1fr;
+    padding: 0 3rem;
+  }
 `
 
 const Break = styled.span`
