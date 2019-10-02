@@ -9,6 +9,10 @@ const Container = styled.section`
   justify-content: flex-end;
   align-items: center;
   padding-right: 5%;
+  @media only screen and (max-width: 30em) {
+    justify-content: center;
+    padding-right: 0%;
+  }
 `
 
 const Details = styled.div`
@@ -16,16 +20,34 @@ const Details = styled.div`
   background-color: rgba(0, 0, 0, 0.9);
   padding: 5rem 3rem;
   border-radius: 10px;
+  @media only screen and (max-width: 56.25em) {
+    width: 60%;
+  }
+  @media only screen and (max-width: 41em) {
+    width: 80%;
+  }
+  @media only screen and (max-width: 30em) {
+    width: 90%;
+  }
 `
 
 const Header = styled.h4`
   font-size: 2.5rem;
+  @media only screen and (max-width: 41em) {
+    font-size: 2rem;
+  }
 `
 
 const Paragraph = styled.p`
   font-size: 2rem;
   padding: 1.5rem 0;
   color: #8f8f8f;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 1.6rem;
+  }
 `
 
 const TwoDimensional = () => (
