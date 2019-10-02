@@ -27,5 +27,6 @@ module.exports = {
         display: "standalone",
       },
     },
+    `gatsby-plugin-styled-components`,
   ],
 }

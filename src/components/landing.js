@@ -2,9 +2,6 @@ import React from "react"
 import styled, { keyframes } from "styled-components"
 import { Link } from "gatsby"
 
-import ArrowButtonRight from "./arrowButtonRight"
-import ArrowButtonLeft from "./arrowButtonLeft"
-
 const moveInLeft = keyframes`
     0%{
         opacity: 0;
