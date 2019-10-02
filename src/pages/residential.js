@@ -15,7 +15,7 @@ import Footer from "../components/footer"
 import Modal from "../components/modal"
 
 const Header = styled.h4`
-  margin: 15rem 0;
+  margin: 5rem 0;
   font-size: 5rem;
   font-family: "Playfair Display", serif;
   text-align: center;

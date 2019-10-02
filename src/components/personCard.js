@@ -23,12 +23,18 @@ const Image = styled.img`
 
 const Header = styled.h4`
   font-size: 2.5rem;
+  @media only screen and (max-width: 41em) {
+    font-size: 2rem;
+  }
 `
 
 const Secondary = styled.span`
   font-size: 2rem;
   font-style: oblique;
   margin-bottom: 3rem;
+  @media only screen and (max-width: 41em) {
+    font-size: 1.8rem;
+  }
 `
 
 const Email = styled.a`
@@ -39,6 +45,9 @@ const Email = styled.a`
     align-self: flex-end;
     color: #0074b8;
     text-decoration: none;
+    @media only screen and (max-width: 41em) {
+      font-size: 1.6rem;
+    }
   }
   :active,
   :hover {
@@ -48,6 +57,9 @@ const Email = styled.a`
 
 const Details = styled.span`
   font-size: 1.8rem;
+  @media only screen and (max-width: 41em) {
+    font-size: 1.6rem;
+  }
 `
 
 const PersonCard = ({ name, title, image, email, children }) => (
