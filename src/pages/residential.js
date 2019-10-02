@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -38,6 +38,7 @@ const Features = styled.section`
 `
 
 const ResidentialPage = () => {
+  const [open, setOpen] = useState(false)
   return (
     <Layout title="KnoGeo - Residential">
       <Heading
@@ -48,6 +49,7 @@ const ResidentialPage = () => {
         secondary="Every Listing in Manhattan is now live,
         check one out"
         center
+        setOpen={setOpen}
       />
       <Device />
       <TwoDimensional />
@@ -74,11 +76,13 @@ const ResidentialPage = () => {
       </Features>
       <Header>Coming Soon: Flights</Header>
       <Flyover />
-      <Description />
+      <Description setOpen={setOpen} />
       <Footer />
       <Modal
         title="Get your showcase"
         textPlaceholder="How can we help? (if there is a specific listing you would like a Showcase for, you can tell us the address or ID here)"
+        setOpen={setOpen}
+        open={open}
       />
     </Layout>
   )

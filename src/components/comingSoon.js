@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 const Container = styled.section`
   display: grid;
@@ -34,7 +33,8 @@ const Secondary = styled(Details)`
   align-items: center;
 `
 
-const CTA = styled(Link)`
+const CTA = styled.span`
+  cursor: pointer;
   color: #0074b8;
   text-decoration: none;
   padding: 1rem 3rem;
@@ -47,11 +47,11 @@ const CTA = styled(Link)`
   }
 `
 
-const ComingSoon = () => (
+const ComingSoon = ({ setOpen }) => (
   <Container>
     <Secondary>
       <Header>Interested?</Header>
-      <CTA to="#">Contact us</CTA>
+      <CTA onClick={() => setOpen(true)}>Contact us</CTA>
     </Secondary>
     <Details>
       <Header>Coming Soon</Header>

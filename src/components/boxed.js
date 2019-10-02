@@ -14,7 +14,7 @@ const Container = styled.div`
   align-items: center;
 `
 
-const CTA = styled.button`
+const CTA = styled.span`
   font-size: 1.6rem;
   margin-top: 5rem;
   color: #0074b8;
@@ -28,10 +28,10 @@ const CTA = styled.button`
     color: #efefef;
   }
 `
-const Boxed = ({ children }) => (
+const Boxed = ({ setOpen, children }) => (
   <Container>
     {children}
-    <CTA>Contact Us For a Quote Today</CTA>
+    <CTA onClick={() => setOpen(true)}>Contact Us For a Quote Today</CTA>
   </Container>
 )
 

@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 const Container = styled.section`
   display: grid;
@@ -53,7 +52,8 @@ const Secondary = styled(Details)`
   }
 `
 
-const CTA = styled(Link)`
+const CTA = styled.span`
+  cursor: pointer;
   color: #0074b8;
   text-decoration: none;
   padding: 1rem 3rem;
@@ -66,7 +66,7 @@ const CTA = styled(Link)`
   }
 `
 
-const Description = () => (
+const Description = ({ setOpen }) => (
   <Container>
     <Details>
       <Header>Why KnoGeo</Header>
@@ -83,7 +83,7 @@ const Description = () => (
         Get your Manhattan Showcase today to be on the cutting-edge of agent +
         client focused real estate technology
       </Paragraph>
-      <CTA to="#">Get Your Showcase</CTA>
+      <CTA onClick={() => setOpen(true)}>Get Your Showcase</CTA>
     </Secondary>
   </Container>
 )

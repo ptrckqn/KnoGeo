@@ -12,6 +12,34 @@ const Container = styled.div`
   background: #191919;
   border-radius: 10px;
   padding: 5rem;
+  visibility: ${props => (props.open ? "visible" : "hidden")};
+`
+
+const CloseBtn = styled.span`
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  cursor: pointer;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 3rem;
+    height: 1px;
+    background-color: #fff;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
 `
 
 const Header = styled.h4`
@@ -48,7 +76,7 @@ const Input = styled.input`
   background-color: transparent;
   font-size: 1.8rem;
   padding: 1.5rem;
-  transition: all 0.3s;
+  transition: border 0.3s;
   width: 30rem;
   &:focus {
     outline: none;
@@ -84,14 +112,14 @@ const Submit = styled.button`
   padding: 1rem 3rem;
   border: 1px solid #0074b8;
   border-radius: 30px;
-  transition: all 0.3s;
+  transition: border 0.3s;
   &:hover {
     background-color: #0074b8;
     color: #efefef;
   }
 `
 
-const Modal = ({ title, textPlaceholder, full }) => {
+const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
   const [details, setDetails] = useState({
     name: "",
     email: "",
@@ -111,7 +139,7 @@ const Modal = ({ title, textPlaceholder, full }) => {
   }
 
   return (
-    <Container>
+    <Container open={open}>
       <Header>{title}</Header>
       <Form>
         <InputWrapper>
@@ -188,6 +216,7 @@ const Modal = ({ title, textPlaceholder, full }) => {
 
         <Submit onClick={handleSubmit}>Submit</Submit>
       </Form>
+      <CloseBtn onClick={() => setOpen(false)}>&nbsp;</CloseBtn>
     </Container>
   )
 }

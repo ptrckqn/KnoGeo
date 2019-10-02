@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 const Container = styled.section`
   position: relative;
@@ -51,7 +50,10 @@ const Primary = styled.h2`
   line-height: 1.2;
 `
 
-const CTA = styled(Link)`
+const CTA = styled.span`
+  cursor: pointer;
+  background: transparent;
+  font-size: 2rem;
   color: #efefef;
   text-decoration: none;
   padding: 1rem 3rem;
@@ -72,7 +74,15 @@ const Secondary = styled.h3`
   line-height: 1.3;
   font-style: oblique;
 `
-const Heading = ({ image, title, primary, secondary, cta, center }) => (
+const Heading = ({
+  setOpen,
+  image,
+  title,
+  primary,
+  secondary,
+  cta,
+  center,
+}) => (
   <Container image={image}>
     <Details center={center}>
       <Title>{title}</Title>
@@ -80,7 +90,7 @@ const Heading = ({ image, title, primary, secondary, cta, center }) => (
       <Primary>{primary}</Primary>
     </Details>
     <Section>
-      <CTA to="/">{cta}</CTA>
+      <CTA onClick={() => setOpen(true)}>{cta}</CTA>
       <Secondary>{secondary}</Secondary>
     </Section>
   </Container>
