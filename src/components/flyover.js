@@ -6,6 +6,9 @@ const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  @media only screen and (max-width: 41em) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const Video = styled.video`
@@ -16,6 +19,12 @@ const Details = styled.div`
   font-size: 2.3rem;
   padding: 3rem;
   color: #8f8f8f;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 1.6rem;
+  }
 `
 
 const Right = styled.div`
