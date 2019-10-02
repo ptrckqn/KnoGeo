@@ -54,7 +54,7 @@ const Primary = styled.h2`
 const CTA = styled(Link)`
   color: #efefef;
   text-decoration: none;
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   border: 1px solid #efefef;
   border-radius: 30px;
   transition: all 0.3s;

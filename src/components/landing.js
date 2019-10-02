@@ -99,7 +99,8 @@ const Secondary = styled.h3`
 const CTA = styled(Link)`
   justify-self: center;
   text-align: center;
-  color: #efefef;
+  color: #202020;
+  background-color: #efefef;
   text-decoration: none;
   padding: 1.5rem 3rem;
   border: 1px solid #efefef;
@@ -108,8 +109,8 @@ const CTA = styled(Link)`
   transition: all 0.3s;
   margin: 5rem 2rem;
   &:hover {
-    background-color: #efefef;
-    color: #202020;
+    background: transparent;
+    color: #efefef;
   }
   @media only screen and (max-width: 56.25em) {
     font-size: 1.6rem;

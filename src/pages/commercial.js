@@ -13,6 +13,7 @@ import Chat from "../components/svg/chat"
 import Graph from "../components/svg/graph"
 import Building from "../components/svg/building"
 import Card from "../components/card"
+import Boxed from "../components/boxed"
 import ComingSoon from "../components/comingSoon"
 import Footer from "../components/footer"
 
@@ -41,7 +42,7 @@ const Cards = styled.section`
   padding: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 10rem;
+  grid-row-gap: 5rem;
   grid-column-gap: 5rem;
 `
 
@@ -184,6 +185,12 @@ const Commercial = () => (
         No matter how big or small your database, we scale with you
       </Card>
     </Cards>
+    <Header>Pricing</Header>
+    <Boxed>
+      Our prices are mostly driven by the size of market you operate in and the
+      amount of data you wish to integrate with so we can provide value to any
+      customer. Contact us today for a quote
+    </Boxed>
     <ComingSoon />
     <Footer />
   </Layout>
