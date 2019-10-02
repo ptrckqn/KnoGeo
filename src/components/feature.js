@@ -24,6 +24,12 @@ const Paragraph = styled.p`
   font-size: 2rem;
   padding: 1.5rem 0;
   color: #8f8f8f;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 1.6rem;
+  }
 `
 
 const Feature = ({ children, heading, body }) => (

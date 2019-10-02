@@ -41,7 +41,7 @@ const Details = styled.span`
   padding: 5rem 3rem;
   align-self: center;
   @media only screen and (max-width: 41em) {
-    padding: 3rem 1.5rem;
+    padding: 3rem;
   }
 `
 

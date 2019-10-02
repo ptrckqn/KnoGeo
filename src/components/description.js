@@ -17,22 +17,29 @@ const Container = styled.section`
 `
 
 const Details = styled.div`
-  padding: 5rem 3rem;
-  @media only screen and (max-width: 41em) {
-    padding: 5rem 1.5rem;
-  }
+  padding: 3rem;
 `
 
 const Header = styled.h4`
   font-size: 5rem;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 4.5rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 4rem;
+  }
 `
 
 const Paragraph = styled.p`
   font-size: 2rem;
   padding: 1.5rem 0;
   color: #8f8f8f;
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.8rem;
+  }
   @media only screen and (max-width: 41em) {
     padding: 0;
+    font-size: 1.6rem;
   }
 `
 
@@ -63,6 +70,9 @@ const CTA = styled.span`
   &:hover {
     background-color: #0074b8;
     color: #efefef;
+  }
+  @media only screen and (max-width: 46.25em) {
+    margin-top: 3rem;
   }
 `
 
