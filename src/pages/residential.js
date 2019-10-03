@@ -15,7 +15,7 @@ import Footer from "../components/footer"
 import Modal from "../components/modal"
 
 const Header = styled.h4`
-  margin: 5rem 0;
+  padding: 10rem 1.5rem 2rem;
   font-size: 5rem;
   font-family: "Playfair Display", serif;
   text-align: center;
@@ -28,7 +28,7 @@ const Header = styled.h4`
 `
 
 const Features = styled.section`
-  margin: 10rem 0;
+  margin: 5rem 0;
   padding: 0 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

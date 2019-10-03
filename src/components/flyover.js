@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
 const Container = styled.section`
-  padding: 1rem 0;
+  padding: 10rem 0 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;

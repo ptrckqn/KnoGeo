@@ -20,6 +20,7 @@ const Checkbox = styled.input`
 `
 
 const MenuIcon = styled.label`
+  display: block;
   position: relative;
   display: none;
   z-index: 10;

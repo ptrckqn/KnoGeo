@@ -2,11 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.section`
+  padding: 10rem 0 5rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   max-width: 100rem;
-  margin: 10rem auto;
-  padding: 3rem;
+  margin: 0 auto;
   @media only screen and (max-width: 46.25em) {
     grid-template-columns: 1fr;
     padding: 1rem;

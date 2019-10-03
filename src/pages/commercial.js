@@ -19,7 +19,7 @@ import Footer from "../components/footer"
 import Modal from "../components/modal"
 
 const Header = styled.h4`
-  margin: 10rem 0 0;
+  padding: 10rem 1.5rem; 2rem;
   font-size: 5rem;
   font-family: "Playfair Display", serif;
   text-align: center;
@@ -32,7 +32,7 @@ const Header = styled.h4`
 `
 
 const Features = styled.section`
-  margin: 10rem 0;
+  margin: 5rem 0;
   padding: 0 10rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -48,8 +48,7 @@ const Features = styled.section`
 `
 
 const Cards = styled.section`
-  margin: 10rem 0;
-  padding: 10rem;
+  padding: 10rem 10rem 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 5rem;
@@ -92,10 +91,11 @@ const Commercial = () => {
         information stuck in spreadsheets and organize it as it exists in the
         real world, driving value for our customers through better analysis,
         presentation, and understanding.
+        <Tagline>
+          Making Data <span>Make Sense.</span>
+        </Tagline>
       </Block>
-      <Tagline>
-        Making Data <span>Make Sense.</span>
-      </Tagline>
+
       <Header>Benefits of Using 3DCRE</Header>
       <Features>
         <Feature

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.section`
-  margin: 10rem auto;
+  padding: 10rem 0 5rem;
   display: flex;
   justify-content: space-between;
   flex-direction: ${props => (props.mirror ? "row-reverse" : "row")};
