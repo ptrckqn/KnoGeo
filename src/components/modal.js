@@ -173,7 +173,7 @@ const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
   return (
     <Container open={open}>
       <Header>{title}</Header>
-      <Form>
+      <Form netlify>
         <InputWrapper>
           <Input
             type="text"
