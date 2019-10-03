@@ -6,8 +6,8 @@ const Container = styled.div`
   position: fixed;
   top: 50%;
   left: 50%;
-  max-height: 80vh;
   overflow: scroll;
+  max-height: 90vh;
   transform: translate(-50%, -50%);
   background: #191919;
   border-radius: 10px;
@@ -54,7 +54,7 @@ const Header = styled.h4`
 `
 
 const Form = styled.form`
-  margin: 5rem 0;
+  margin: 2.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,6 +66,7 @@ const Form = styled.form`
 const InputWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1.5rem;
   align-items: center;
   @media only screen and (max-width: 41em) {
     grid-template-columns: 1fr;
@@ -110,7 +111,7 @@ const Input = styled.input`
 const TextInput = styled.textarea`
   font-family: "Lato", sans-serif;
   line-height: 1.7;
-  height: 25rem;
+  height: 15rem;
   width: 100%;
   overflow: scroll;
   margin: 1.5rem 0;
@@ -120,7 +121,6 @@ const TextInput = styled.textarea`
   background-color: transparent;
   font-size: 1.8rem;
   padding: 1.5rem;
-  transition: all 0.3s;
   resize: none;
   &:focus {
     outline: none;
@@ -175,38 +175,32 @@ const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
       <Header>{title}</Header>
       <Form>
         <InputWrapper>
-          <Label htmlFor="name">Name</Label>
           <Input
             type="text"
             name="name"
             id="name"
             value={details.name}
             onChange={handleChange}
-            placeholder="Kawhi Leonard"
+            placeholder="Name"
             required
           />
         </InputWrapper>
 
         <InputWrapper>
-          <Label htmlFor="email">Email</Label>
           <Input
             type="email"
             name="email"
             id="email"
             value={details.email}
             onChange={handleChange}
-            placeholder="KLeonard2@clippers.com"
+            placeholder="Email"
             required
           />
-        </InputWrapper>
-
-        <InputWrapper>
-          <Label htmlFor="phone">Phone Number</Label>
           <Input
             type="text"
             name="phone"
             id="phone"
-            placeholder="555-555-5555"
+            placeholder="Phone Number"
             value={details.phone}
             onChange={handleChange}
           />
@@ -215,23 +209,19 @@ const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
         {full ? (
           <>
             <InputWrapper>
-              <Label htmlFor="company">Company</Label>
-              <Input
-                type="text"
-                name="company"
-                id="company"
-                placeholder="Clippers"
-                value={details.company}
-                onChange={handleChange}
-              />
-            </InputWrapper>
-            <InputWrapper>
-              <Label htmlFor="location">Location</Label>
               <Input
                 type="text"
                 name="location"
                 id="location"
-                placeholder="Los Angeles"
+                placeholder="Company"
+                value={details.location}
+                onChange={handleChange}
+              />
+              <Input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="Location"
                 value={details.location}
                 onChange={handleChange}
               />
