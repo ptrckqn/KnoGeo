@@ -20,29 +20,37 @@ const Checkbox = styled.input`
 `
 
 const MenuIcon = styled.label`
-  display: block;
   position: relative;
   display: none;
   z-index: 10;
-  width: 2rem;
-  height: 1px;
-  background-color: #efefef;
-  transition: all 0.3s;
-  &::before,
-  &::after {
-    content: "";
+  height: 3rem;
+  width: 3rem;
+  span {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 2rem;
     height: 1px;
     background-color: #efefef;
     transition: all 0.3s;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2rem;
+      height: 1px;
+      background-color: #efefef;
+      transition: all 0.3s;
+    }
+    &::before {
+      top: 0.5rem;
+    }
+    &::after {
+      top: -0.5rem;
+    }
   }
-  &::before {
-    top: 0.5rem;
-  }
-  &::after {
-    top: 1rem;
-  }
+
   @media only screen and (max-width: 30em) {
     display: block;
   }
@@ -122,7 +130,9 @@ const Navbar = () => (
       <Brand fillOne="#efefef" fillTwo="#efefef" />
     </BrandBox>
     <Checkbox type="checkbox" id="menu" />
-    <MenuIcon htmlFor="menu" />
+    <MenuIcon htmlFor="menu">
+      <span />
+    </MenuIcon>
     <NavLinks>
       <NavItem>
         <NavLink to="/residential">Residential</NavLink>

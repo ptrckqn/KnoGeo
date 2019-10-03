@@ -173,15 +173,7 @@ const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
   return (
     <Container open={open}>
       <Header>{title}</Header>
-      <Form
-        name={full ? "Commercial Form" : "Residential Form"}
-        data-netlify="true"
-      >
-        <input
-          type="hidden"
-          name="form-name"
-          value={full ? "Commercial Form" : "Residential Form"}
-        />
+      <Form>
         <InputWrapper>
           <Input
             type="text"
