@@ -173,7 +173,15 @@ const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
   return (
     <Container open={open}>
       <Header>{title}</Header>
-      <Form netlify>
+      <Form
+        name={full ? "Commercial Form" : "Residential Form"}
+        data-netlify="true"
+      >
+        <input
+          type="hidden"
+          name="form-name"
+          value={full ? "Commercial Form" : "Residential Form"}
+        />
         <InputWrapper>
           <Input
             type="text"
@@ -211,10 +219,10 @@ const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
             <InputWrapper>
               <Input
                 type="text"
-                name="location"
-                id="location"
+                name="company"
+                id="company"
                 placeholder="Company"
-                value={details.location}
+                value={details.company}
                 onChange={handleChange}
               />
               <Input
