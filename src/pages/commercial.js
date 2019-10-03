@@ -19,7 +19,7 @@ import Footer from "../components/footer"
 import Modal from "../components/modal"
 
 const Header = styled.h4`
-  margin: 20rem 0 0;
+  margin: 10rem 0 0;
   font-size: 5rem;
   font-family: "Playfair Display", serif;
   text-align: center;
@@ -77,45 +77,7 @@ const Commercial = () => {
         center
         setOpen={setOpen}
       />
-      <Header>About 3DCRE</Header>
-      <Block image="/images/block1.jpg">
-        3DCRE dynamically connects market, property, and unit information into a
-        cloud-based 3D platform that unlocks the value of your data.
-        <Break />
-        Our plateform is built for CRE offices, property managers, and urban
-        planners in the most competitive real estate markets, where traditional
-        data visualization and analysis techniques break down due to the density
-        of properties and professionals need an innovative way to stay on top.
-        <Break />
-        By combining location intelligence and property data in our patented
-        platform, we offer simple integration with any dataset to take
-        information stuck in spreadsheets and organize it as it exists in the
-        real world, driving value for our customers through better analysis,
-        presentation, and understanding.
-      </Block>
-      <Tagline>
-        Making Data <span>Make Sense.</span>
-      </Tagline>
-      <Header>About 3DCRE</Header>
-      <Block image="/images/block2.jpg" mirror>
-        3DCRE dynamically connects market, property, and unit information into a
-        cloud-based 3D platform that unlocks the value of your data.
-        <Break />
-        Our plateform is built for CRE offices, property managers, and urban
-        planners in the most competitive real estate markets, where traditional
-        data visualization and analysis techniques break down due to the density
-        of properties and professionals need an innovative way to stay on top.
-        <Break />
-        By combining location intelligence and property data in our patented
-        platform, we offer simple integration with any dataset to take
-        information stuck in spreadsheets and organize it as it exists in the
-        real world, driving value for our customers through better analysis,
-        presentation, and understanding.
-      </Block>
-      <Tagline>
-        Making Data <span>Make Sense.</span>
-      </Tagline>
-      <Header>About 3DCRE</Header>
+      <Header>About 3DCRE Platform</Header>
       <Block image="/images/block3.jpg">
         3DCRE dynamically connects market, property, and unit information into a
         cloud-based 3D platform that unlocks the value of your data.

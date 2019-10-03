@@ -132,7 +132,7 @@ const Landing = () => (
       </Secondary>
     </Header>
     <CTA to="/residential">Explore KnoGeo Residential</CTA>
-    <CTA to="/commercial">Exlpore KnoGeo Commerical</CTA>
+    <CTA to="/commercial">Explore KnoGeo Commercial</CTA>
   </Container>
 )
 

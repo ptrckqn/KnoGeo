@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
 const Container = styled.section`
-  padding: 10rem 0;
+  padding: 1rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -39,19 +39,19 @@ const Flyover = () => {
       </Video>
       <Right>
         <Details>
-          Flights allow you to create virtual views of each property and
-          neighborhood in minutes, complete with your comments and highlights
-          for each listing. Let your clients visit listings back-to-back in
-          seconds rather than days, and help them narrow their choices with
-          property visits they can experience on their phone or desktop.
-        </Details>
-        <Details>
           Showings are one of the most time-consuming parts of the real estate
           search process: You have to organize your clients, the listings, and
           your own schedule to make it work, and it often takes days of client’s
           booking time off work and driving around town to get to everything
           they’re interested in. This is particularly difficult to manage when
           working with out-of-town clients.
+        </Details>
+        <Details>
+          Flights allow you to create virtual views of each property and
+          neighborhood in minutes, complete with your comments and highlights
+          for each listing. Let your clients visit listings back-to-back in
+          seconds rather than days, and help them narrow their choices with
+          property visits they can experience on their phone or desktop.
         </Details>
       </Right>
     </Container>

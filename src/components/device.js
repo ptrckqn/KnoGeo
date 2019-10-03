@@ -6,7 +6,6 @@ const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 90vh);
-  grid-row-gap: 50vh;
   overflow: hidden;
   @media only screen and (max-width: 46.25em) {
     grid-template-columns: 1fr;

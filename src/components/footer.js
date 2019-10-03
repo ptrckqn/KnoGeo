@@ -90,7 +90,7 @@ const Footer = () => (
         <NavLink to="/residential">Residential</NavLink>
       </NavItem>
       <NavItem>
-        <NavLink to="/commercial">Commerical</NavLink>
+        <NavLink to="/commercial">Commercial</NavLink>
       </NavItem>
       <NavItem>
         <ExternalLink
