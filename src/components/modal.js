@@ -133,6 +133,7 @@ const TextInput = styled.textarea`
 `
 
 const Submit = styled.button`
+  cursor:
   margin-top: 1.5rem;
   background-color: transparent;
   font-size: 1.8rem;
@@ -168,6 +169,19 @@ const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
   function handleSubmit(e) {
     e.preventDefault()
     console.log(details)
+
+    fetch("https://c9174zr8og.execute-api.us-west-2.amazonaws.com/dev", {
+      method: "POST",
+      body: details,
+    })
+    setDetails({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      location: "",
+      body: "",
+    })
   }
 
   return (
