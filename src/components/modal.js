@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
 const Container = styled.div`
@@ -160,20 +160,34 @@ const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
     company: "",
     location: "",
     body: "",
+    product: "",
   })
+
+  useEffect(() => {
+    if (full) {
+      setDetails({ ...details, product: "Commercial" })
+    } else {
+      setDetails({ ...details, product: "Residential" })
+    }
+  }, [])
 
   function handleChange(e) {
     setDetails({ ...details, [e.target.name]: e.target.value })
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault()
-    console.log(details)
-
-    fetch("https://c9174zr8og.execute-api.us-west-2.amazonaws.com/dev", {
-      method: "POST",
-      body: details,
-    })
+    const result = await fetch(
+      "https://g7qecb2sy9.execute-api.us-west-2.amazonaws.com/dev",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(details),
+      }
+    )
     setDetails({
       name: "",
       email: "",
@@ -181,6 +195,7 @@ const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
       company: "",
       location: "",
       body: "",
+      product: "",
     })
   }
 
