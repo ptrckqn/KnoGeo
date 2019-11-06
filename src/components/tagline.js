@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Container = styled.span`
-  padding: 10rem 0 5rem;
+  padding: 5rem 0;
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 6rem;
@@ -18,6 +18,9 @@ const Container = styled.span`
   }
   @media only screen and (max-width: 41em) {
     font-size: 4rem;
+    span {
+      display: block;
+    }
   }
 `
 

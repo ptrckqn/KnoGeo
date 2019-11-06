@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
 
 const Container = styled.section`
@@ -13,6 +13,7 @@ const Container = styled.section`
 
 const Video = styled.video`
   width: 100%;
+  padding: 3rem;
 `
 
 const Details = styled.div`
@@ -35,7 +36,7 @@ const Flyover = () => {
   return (
     <Container>
       <Video autoplay muted controls>
-        <source src="videos/flyover.mp4" type="video/mp4" />
+        <source src="/videos/flyover.mp4" type="video/mp4" />
       </Video>
       <Right>
         <Details>

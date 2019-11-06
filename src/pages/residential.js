@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -43,12 +44,12 @@ const Features = styled.section`
   }
 `
 
-const ResidentialPage = () => {
+const ResidentialPage = ({ data: { hero, phone, laptop } }) => {
   const [open, setOpen] = useState(false)
   return (
     <Layout title="KnoGeo - Residential">
       <Heading
-        image="/images/hero6.jpg"
+        image={hero}
         title="Location Marketing"
         primary="“Interactive, Photorealistic, 3D Showcases of Listings”"
         cta="Get Your Listing’s Showcase for just $25"
@@ -57,7 +58,7 @@ const ResidentialPage = () => {
         center
         setOpen={setOpen}
       />
-      <Device />
+      <Device phone={phone} laptop={laptop} />
       <TwoDimensional />
       <Header>Features</Header>
       <Features>
@@ -95,3 +96,29 @@ const ResidentialPage = () => {
 }
 
 export default ResidentialPage
+
+export const pageQuery = graphql`
+  query residentialQuery {
+    hero: file(relativePath: { eq: "hero6.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    phone: file(relativePath: { eq: "phone.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    laptop: file(relativePath: { eq: "laptop.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`

@@ -1,13 +1,16 @@
 import React from "react"
 import styled from "styled-components"
+import { graphql } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 
 import Layout from "../components/layout"
 import PersonCard from "../components/personCard"
 
-const Container = styled.section`
+const Container = styled(BackgroundImage)`
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/images/hero3.jpg) center left/cover no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 3rem;
   @media only screen and (max-width: 56.25em) {
     padding: 10rem 3rem;
@@ -16,6 +19,16 @@ const Container = styled.section`
   @media only screen and (max-width: 41em) {
     padding: 10rem 1rem;
   }
+`
+
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  background: #000;
+  opacity: 0.4;
 `
 
 const Cards = styled.div`
@@ -31,15 +44,16 @@ const Cards = styled.div`
   }
 `
 
-const Team = () => (
+const Team = ({ data: { hero, chingiz, jesse, jordan } }) => (
   <Layout title="KnoGeo - Team">
-    <Container>
+    <Container fluid={hero.childImageSharp.fluid}>
+      <Overlay />
       <Cards>
         <PersonCard
           name="Jesse Brown"
           title="CEO"
           email="jesse@knogeo.com"
-          image="/images/jesse.jpg"
+          image={jesse}
         >
           An honour’s finance graduate, Jesse’s grew up in a 4th generation real
           estate family and his work experience includes founding and growing
@@ -50,7 +64,7 @@ const Team = () => (
         <PersonCard
           name="Chingiz Bakhishov"
           title="Software Developer"
-          image="/images/chingiz.jpg"
+          image={chingiz}
         >
           Chingiz is an engineering graduate who combines geomatics and software
           expertise to power the core Hylyte platform. He previously co-founded
@@ -60,7 +74,7 @@ const Team = () => (
         <PersonCard
           name="Jordan Selanders"
           title="Software Developer"
-          image="/images/jordan.jpg"
+          image={jordan}
         >
           Jordan has been programming since he was 10 years old, and brings a
           background across game development, 3D animation, and web
@@ -73,3 +87,36 @@ const Team = () => (
 )
 
 export default Team
+
+export const pageQuery = graphql`
+  query teamQuery {
+    hero: file(relativePath: { eq: "hero3.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    chingiz: file(relativePath: { eq: "headshots/chingiz.jpg" }) {
+      childImageSharp {
+        fixed(height: 200, width: 200) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+    }
+    jesse: file(relativePath: { eq: "headshots/jesse.jpg" }) {
+      childImageSharp {
+        fixed(height: 200, width: 200) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+    }
+    jordan: file(relativePath: { eq: "headshots/jordan.jpg" }) {
+      childImageSharp {
+        fixed(height: 200, width: 200) {
+          ...GatsbyImageSharpFixed_withWebp_noBase64
+        }
+      }
+    }
+  }
+`

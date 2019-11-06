@@ -1,9 +1,11 @@
 import React, { useState } from "react"
+import { graphql } from "gatsby"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
 import Heading from "../components/heading"
 import Block from "../components/block"
+import Gallery from "../components/gallery"
 import Tagline from "../components/tagline"
 import Feature from "../components/feature"
 import Radar from "../components/svg/radar"
@@ -64,12 +66,18 @@ const Break = styled.span`
   height: 3rem;
 `
 
-const Commercial = () => {
+const Commercial = ({
+  data: {
+    hero,
+    threedcreMain,
+    allFile: { gallery },
+  },
+}) => {
   const [open, setOpen] = useState(false)
   return (
     <Layout title="KnoGeo - Commercial">
       <Heading
-        image="/images/hero7.jpg"
+        image={hero}
         title="Visualization and Analysis of Property Data: Specifically Made for Big Cities"
         primary="Analyze, explore, and present your data in 3D"
         cta="Contact us"
@@ -77,7 +85,7 @@ const Commercial = () => {
         setOpen={setOpen}
       />
       <Header>About 3DCRE Platform</Header>
-      <Block image="/images/block3.jpg">
+      <Block image={threedcreMain}>
         3DCRE dynamically connects market, property, and unit information into a
         cloud-based 3D platform that unlocks the value of your data.
         <Break />
@@ -91,11 +99,12 @@ const Commercial = () => {
         information stuck in spreadsheets and organize it as it exists in the
         real world, driving value for our customers through better analysis,
         presentation, and understanding.
+      </Block>
+      <Gallery images={gallery}>
         <Tagline>
           Making Data <span>Make Sense.</span>
         </Tagline>
-      </Block>
-
+      </Gallery>
       <Header>Benefits of Using 3DCRE</Header>
       <Features>
         <Feature
@@ -177,3 +186,33 @@ const Commercial = () => {
 }
 
 export default Commercial
+
+export const pageQuery = graphql`
+  query commercialQuery {
+    hero: file(relativePath: { eq: "hero7.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    threedcreMain: file(relativePath: { eq: "3dcre-main.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    allFile(filter: { relativeDirectory: { eq: "gallery" } }) {
+      gallery: edges {
+        node {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
+  }
+`

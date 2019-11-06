@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Img from "gatsby-image"
 
 const Container = styled.div`
   padding: 3rem;
@@ -13,9 +14,8 @@ const Container = styled.div`
   overflow: hidden;
 `
 
-const Image = styled.img`
+const Image = styled(Img)`
   border-radius: 50%;
-  object-fit: cover;
   height: 20rem;
   width: 20rem;
   margin-bottom: 3rem;
@@ -64,7 +64,7 @@ const Details = styled.span`
 
 const PersonCard = ({ name, title, image, email, children }) => (
   <Container>
-    <Image src={image} />
+    <Image fixed={image.childImageSharp.fixed} />
     <Header>{name}</Header>
     <Secondary>{title}</Secondary>
     <Details>{children}</Details>

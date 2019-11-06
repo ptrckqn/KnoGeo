@@ -1,12 +1,24 @@
 import React from "react"
 import styled from "styled-components"
+import BackgroundImage from "gatsby-background-image"
 
-const Container = styled.section`
+const Container = styled(BackgroundImage)`
   position: relative;
   height: 95vh;
-  background: ${props => `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(${props.image}) center center/cover no-repeat;`};
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   z-index: 2;
+`
+
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  background: #000;
+  opacity: 0.4;
 `
 
 const Details = styled.div`
@@ -112,7 +124,8 @@ const Heading = ({
   cta,
   center,
 }) => (
-  <Container image={image}>
+  <Container fluid={image.childImageSharp.fluid}>
+    <Overlay />
     <Details center={center}>
       <Title>{title}</Title>
 

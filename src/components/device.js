@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "styled-components"
+import BackgroundImage from "gatsby-background-image"
 
 const Container = styled.section`
   padding: 10rem 0 5rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 90vh);
   overflow: hidden;
   @media only screen and (max-width: 46.25em) {
@@ -14,24 +15,38 @@ const Container = styled.section`
   }
 `
 
-const Laptop = styled.div`
-  background: url(/images/laptop.png) center right/cover no-repeat;
+const Laptop = styled(BackgroundImage)`
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100%;
+  grid-column: 1 / 3;
   @media only screen and (max-width: 46.25em) {
-    background-position: center;
-    background-size: contain;
+    grid-column: auto;
+    &::before,
+    &::after {
+      background-position: center !important;
+      background-size: contain !important;
+    }
     grid-row: 2 / 3;
     margin: 0 1.5rem;
   }
 `
 
-const Phone = styled.div`
-  background: url(/images/phone.png) center left/contain no-repeat;
+const Phone = styled(BackgroundImage)`
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 100%;
   transform: translateX(50%);
+  grid-column: 2/ 3;
   @media only screen and (max-width: 46.25em) {
-    background-position: center;
-    background-size: contain;
+    grid-column: auto;
+    &::before,
+    &::after {
+      background-position: center !important;
+      background-size: contain !important;
+    }
     transform: translate(0);
   }
 `
@@ -66,9 +81,9 @@ const Paragraph = styled.p`
   }
 `
 
-const Device = () => (
+const Device = ({ laptop, phone }) => (
   <Container>
-    <Laptop />
+    <Laptop fluid={laptop.childImageSharp.fluid} />
     <Details>
       <Header>Bring the Power of 3D to the Built Environment</Header>
       <Paragraph>
@@ -95,7 +110,7 @@ const Device = () => (
         and interactive experience that captures attention for your listing.
       </Paragraph>
     </Details>
-    <Phone />
+    <Phone fluid={phone.childImageSharp.fluid} />
   </Container>
 )
 

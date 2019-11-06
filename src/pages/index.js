@@ -1,17 +1,29 @@
 import React from "react"
+import { graphql } from "gatsby"
+import BackgroundImage from "gatsby-background-image"
 import styled from "styled-components"
-
 import Layout from "../components/layout"
 import Landing from "../components/landing"
 
-const Container = styled.section`
+const Container = styled(BackgroundImage)`
   position: relative;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/images/hero4.jpg) center left/cover no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   @media only screen and (max-width: 56.25em) {
     background-position: center;
   }
+`
+
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  opacity: 0.4;
 `
 
 const Skyline = styled.img`
@@ -25,10 +37,17 @@ const Skyline = styled.img`
   }
 `
 
-const IndexPage = () => {
+const IndexPage = ({
+  data: {
+    file: {
+      childImageSharp: { fluid },
+    },
+  },
+}) => {
   return (
     <Layout title="KnoGeo">
-      <Container>
+      <Container fluid={fluid}>
+        <Overlay />
         <Landing />
       </Container>
       <Skyline src="/images/skyline.png" />
@@ -37,3 +56,15 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query landingQuery {
+    file(relativePath: { eq: "hero4.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
