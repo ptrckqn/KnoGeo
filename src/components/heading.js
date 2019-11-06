@@ -101,10 +101,15 @@ const CTA = styled.span`
   }
 `
 
+const Anchor = styled.a`
+  text-decoration: none;
+`
 const Secondary = styled.h3`
   margin: 3rem 0;
   font-family: "Playfair Display", serif;
   font-weight: 400;
+  color: #efefef;
+  text-decoration: none;
   font-size: 2.7rem;
   line-height: 1.3;
   font-style: oblique;
@@ -121,6 +126,7 @@ const Heading = ({
   title,
   primary,
   secondary,
+  secondaryUrl,
   cta,
   center,
 }) => (
@@ -133,7 +139,9 @@ const Heading = ({
     </Details>
     <Section>
       <CTA onClick={() => setOpen(true)}>{cta}</CTA>
-      <Secondary>{secondary}</Secondary>
+      <Anchor href={secondaryUrl} target="__blank">
+        <Secondary>{secondary}</Secondary>
+      </Anchor>
     </Section>
   </Container>
 )

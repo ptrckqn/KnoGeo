@@ -55,6 +55,7 @@ const ResidentialPage = ({ data: { hero, phone, laptop } }) => {
         cta="Get Your Listing’s Showcase for just $25"
         secondary="Every Listing in Manhattan is now live,
         check one out"
+        secondaryUrl="https://hylyte.knogeo.com/showcase/sale/13"
         center
         setOpen={setOpen}
       />
