@@ -177,14 +177,17 @@ const Modal = ({ open, setOpen, title, textPlaceholder, full }) => {
 
   async function handleSubmit(e) {
     e.preventDefault()
-    const result = await fetch(process.env.AWS_MAILER_API, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(details),
-    })
+    const result = await fetch(
+      "https://g7qecb2sy9.execute-api.us-west-2.amazonaws.com/dev/",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(details),
+      }
+    )
     setDetails({
       name: "",
       email: "",
