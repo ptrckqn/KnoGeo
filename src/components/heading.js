@@ -9,6 +9,7 @@ const Container = styled(BackgroundImage)`
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 2;
+  min-height: 62rem;
 `
 
 const Overlay = styled.div`
@@ -54,11 +55,14 @@ const Section = styled.div`
 const Title = styled.h1`
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 1.2;
   margin-bottom: 3rem;
   @media only screen and (max-width: 46.25em) {
     font-size: 6rem;
+  }
+  @media only screen and (max-width: 41em) {
+    font-size: 5rem;
   }
   @media only screen and (max-width: 30em) {
     font-size: 4rem;
@@ -68,7 +72,7 @@ const Title = styled.h1`
 const Primary = styled.h2`
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.5rem;
   line-height: 1.2;
   @media only screen and (max-width: 46.25em) {
     font-size: 3rem;

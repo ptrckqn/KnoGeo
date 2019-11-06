@@ -39,7 +39,7 @@ const ScrollToTop = () => {
     if (window.pageYOffset > window.innerHeight * 0.95) {
       setShow(0)
     } else {
-      setShow(10)
+      setShow(30)
     }
   }
 

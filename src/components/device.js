@@ -6,7 +6,7 @@ const Container = styled.section`
   padding: 10rem 0 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 90vh);
+  grid-template-rows: repeat(2, minmax(80rem, 90vh));
   overflow: hidden;
   @media only screen and (max-width: 46.25em) {
     grid-template-columns: 1fr;

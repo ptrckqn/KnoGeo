@@ -84,12 +84,12 @@ const Commercial = ({
         center
         setOpen={setOpen}
       />
-      <Header>About 3DCRE Platform</Header>
+      <Header>About The 3DCRE Platform</Header>
       <Block image={threedcreMain}>
         3DCRE dynamically connects market, property, and unit information into a
         cloud-based 3D platform that unlocks the value of your data.
         <Break />
-        Our plateform is built for CRE offices, property managers, and urban
+        Our platform is built for CRE offices, property managers, and urban
         planners in the most competitive real estate markets, where traditional
         data visualization and analysis techniques break down due to the density
         of properties and professionals need an innovative way to stay on top.
