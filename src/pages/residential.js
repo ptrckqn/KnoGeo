@@ -102,21 +102,21 @@ export const pageQuery = graphql`
   query residentialQuery {
     hero: file(relativePath: { eq: "hero6.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     phone: file(relativePath: { eq: "phone.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
     laptop: file(relativePath: { eq: "laptop.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }

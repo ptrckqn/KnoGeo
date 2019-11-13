@@ -92,28 +92,28 @@ export const pageQuery = graphql`
   query teamQuery {
     hero: file(relativePath: { eq: "hero3.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 90) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     chingiz: file(relativePath: { eq: "headshots/chingiz.jpg" }) {
       childImageSharp {
-        fixed(height: 200, width: 200) {
+        fixed(height: 200, width: 200, quality: 90) {
           ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }
     jesse: file(relativePath: { eq: "headshots/jesse.jpg" }) {
       childImageSharp {
-        fixed(height: 200, width: 200) {
+        fixed(height: 200, width: 200, quality: 90) {
           ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }
     }
     jordan: file(relativePath: { eq: "headshots/jordan.jpg" }) {
       childImageSharp {
-        fixed(height: 200, width: 200) {
+        fixed(height: 200, width: 200, quality: 90) {
           ...GatsbyImageSharpFixed_withWebp_noBase64
         }
       }

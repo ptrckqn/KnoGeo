@@ -61,7 +61,7 @@ export const pageQuery = graphql`
   query landingQuery {
     file(relativePath: { eq: "hero4.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
