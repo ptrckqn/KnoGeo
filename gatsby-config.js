@@ -33,14 +33,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Lato:300,700", "Playfair+Display:400,700"],
-        },
-      },
-    },
-    {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "KnoGeo",
