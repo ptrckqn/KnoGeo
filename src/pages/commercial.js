@@ -192,14 +192,14 @@ export const pageQuery = graphql`
     hero: file(relativePath: { eq: "hero7.jpg" }) {
       childImageSharp {
         fluid(quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
     threedcreMain: file(relativePath: { eq: "3dcre-main.png" }) {
       childImageSharp {
         fluid(quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
@@ -208,7 +208,7 @@ export const pageQuery = graphql`
         node {
           childImageSharp {
             fluid(quality: 100) {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid_withWebp_noBase64
             }
           }
         }

@@ -93,7 +93,7 @@ export const pageQuery = graphql`
     hero: file(relativePath: { eq: "hero3.jpg" }) {
       childImageSharp {
         fluid(quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }
