@@ -41,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         font-family: 'Lato', sans-serif;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.7;
         color: #efefef;
         background-color: #202020;
