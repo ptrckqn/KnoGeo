@@ -45,6 +45,7 @@ const ImageWapper = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
+  min-height: 300px;
   @media only screen and (max-width: 41em) {
     width: 80%;
     margin: 0 auto;
